@@ -1,0 +1,4086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.x-dev@1f8dc26d1d52a6ab48359884a856abdda4f0a967">
+  <file src="src/Illuminate/Auth/Access/Gate.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$class</code>
+      <code>$policy</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="1">
+      <code>$callback</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="1">
+      <code>$callback</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="3">
+      <code>$class</code>
+      <code>$user</code>
+      <code>$class</code>
+    </PossiblyNullArgument>
+    <RedundantCondition occurrences="1">
+      <code>$method</code>
+    </RedundantCondition>
+  </file>
+  <file src="src/Illuminate/Auth/Access/Response.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$message</code>
+      <code>$message</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Auth/AuthManager.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$provider</code>
+      <code>$this-&gt;createUserProvider($config['provider'] ?? null)</code>
+    </PossiblyNullArgument>
+    <RedundantCondition occurrences="3">
+      <code>method_exists($guard, 'setCookieJar')</code>
+      <code>method_exists($guard, 'setDispatcher')</code>
+      <code>method_exists($guard, 'setRequest')</code>
+    </RedundantCondition>
+    <UndefinedInterfaceMethod occurrences="11">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>refresh</code>
+      <code>$this-&gt;app</code>
+      <code>refresh</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>refresh</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/AuthServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>rebinding</code>
+      <code>rebinding</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/Authenticatable.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>string|null</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Auth/AuthenticationException.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$redirectTo</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Auth/Console/ClearResetsCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/CreatesUserProviders.php">
+    <PossiblyNullArrayOffset occurrences="1">
+      <code>$this-&gt;customProviderCreators</code>
+    </PossiblyNullArrayOffset>
+    <UndefinedInterfaceMethod occurrences="5">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/EloquentUserProvider.php">
+    <LessSpecificReturnStatement occurrences="4">
+      <code>$query-&gt;first()</code>
+      <code>new $class</code>
+    </LessSpecificReturnStatement>
+    <MismatchingDocblockParamType occurrences="1">
+      <code>\Illuminate\Contracts\Auth\Authenticatable|\Illuminate\Database\Eloquent\Model</code>
+    </MismatchingDocblockParamType>
+    <MoreSpecificReturnType occurrences="4">
+      <code>\Illuminate\Contracts\Auth\Authenticatable|null</code>
+      <code>\Illuminate\Contracts\Auth\Authenticatable|null</code>
+      <code>\Illuminate\Contracts\Auth\Authenticatable|null</code>
+      <code>\Illuminate\Database\Eloquent\Model</code>
+    </MoreSpecificReturnType>
+    <NoInterfaceProperties occurrences="3">
+      <code>$user-&gt;timestamps</code>
+      <code>$user-&gt;timestamps</code>
+      <code>$user-&gt;timestamps</code>
+    </NoInterfaceProperties>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;firstCredentialKey($credentials)</code>
+    </PossiblyNullArgument>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>save</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Auth/GuardHelpers.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>$this</code>
+    </ImplementedReturnTypeMismatch>
+    <PossiblyNullReference occurrences="1">
+      <code>getAuthIdentifier</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Auth/Middleware/Authenticate.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;auth-&gt;shouldUse($guard)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Auth/Middleware/AuthenticateWithBasicAuth.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>basic</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/Middleware/Authorize.php">
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Model|string</code>
+    </MoreSpecificReturnType>
+    <NullableReturnStatement occurrences="1"/>
+  </file>
+  <file src="src/Illuminate/Auth/Middleware/EnsureEmailIsVerified.php">
+    <NullableReturnStatement occurrences="1"/>
+  </file>
+  <file src="src/Illuminate/Auth/Notifications/VerifyEmail.php">
+    <InvalidArgument occurrences="1">
+      <code>Carbon::now()-&gt;addMinutes(Config::get('auth.verification.expire', 60))</code>
+    </InvalidArgument>
+  </file>
+  <file src="src/Illuminate/Auth/Passwords/PasswordBrokerManager.php">
+    <UndefinedInterfaceMethod occurrences="7">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/RequestGuard.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$provider</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Auth/SessionGuard.php">
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>\Illuminate\Contracts\Auth\Authenticatable|false</code>
+      <code>$this</code>
+    </ImplementedReturnTypeMismatch>
+    <PossiblyNullArgument occurrences="5">
+      <code>$user</code>
+      <code>$user</code>
+      <code>$user</code>
+      <code>$this-&gt;user()</code>
+      <code>$this-&gt;user()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="6">
+      <code>$request</code>
+      <code>$this-&gt;provider-&gt;retrieveById($id)</code>
+      <code>$user = $this-&gt;provider-&gt;retrieveByCredentials($credentials)</code>
+      <code>$user = $this-&gt;provider-&gt;retrieveByCredentials($credentials)</code>
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyNullReference occurrences="3">
+      <code>getAuthIdentifier</code>
+      <code>getRememberToken</code>
+      <code>forceFill</code>
+    </PossiblyNullReference>
+    <RedundantCondition occurrences="1">
+      <code>is_null($this-&gt;user)</code>
+    </RedundantCondition>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>forceFill</code>
+      <code>hasQueued</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Auth/TokenGuard.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$token</code>
+    </InvalidReturnStatement>
+    <NullableReturnStatement occurrences="1">
+      <code>$token</code>
+    </NullableReturnStatement>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$user</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Broadcasting/BroadcastManager.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$request-&gt;header('X-Socket-ID')</code>
+      <code>$this-&gt;app-&gt;make(BusDispatcherContract::class)-&gt;dispatchNow(new BroadcastEvent(clone $event))</code>
+    </InvalidReturnStatement>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+    <UndefinedClass occurrences="1">
+      <code>Pusher</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$callback</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="1">
+      <code>$callback</code>
+    </InvalidArgument>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;bindingRegistrar</code>
+    </NullableReturnStatement>
+    <UndefinedClass occurrences="1">
+      <code>new $className</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php">
+    <InvalidReturnType occurrences="2">
+      <code>auth</code>
+      <code>validAuthenticationResponse</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php">
+    <InvalidReturnType occurrences="2">
+      <code>auth</code>
+      <code>validAuthenticationResponse</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php">
+    <UndefinedClass occurrences="1">
+      <code>\Pusher\Pusher</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="5">
+      <code>\Pusher\Pusher</code>
+      <code>$this-&gt;pusher</code>
+      <code>$this-&gt;pusher</code>
+      <code>$this-&gt;pusher</code>
+      <code>\Pusher\Pusher</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$connection</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Bus/Dispatcher.php">
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>handle</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullFunctionCall occurrences="1">
+      <code>call_user_func($this-&gt;queueResolver, $connection)</code>
+    </PossiblyNullFunctionCall>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>terminating</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Cache/ApcStore.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;apc-&gt;put($this-&gt;prefix.$key, $value, $seconds)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Cache/ArrayLock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Cache/ArrayStore.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Cache/CacheManager.php">
+    <UndefinedInterfaceMethod occurrences="9">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Cache/Console/CacheTableCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Cache/Console/ClearCommand.php">
+    <ImplicitToStringCast occurrences="2">
+      <code>$file</code>
+      <code>$file</code>
+    </ImplicitToStringCast>
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;error('Failed to clear cache. Make sure you have the appropriate permissions.')</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$this-&gt;argument('store')</code>
+      <code>$this-&gt;option('tags')</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>tags</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Cache/Console/ForgetCommand.php">
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$this-&gt;argument('store')</code>
+      <code>$this-&gt;argument('key')</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>$this-&gt;argument('key')</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Cache/DatabaseLock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Cache/DatabaseStore.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$this-&gt;connection</code>
+    </ArgumentTypeCoercion>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Cache/DynamoDbLock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Cache/DynamoDbStore.php">
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$key</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$response['Item']</code>
+    </PossiblyNullArgument>
+    <PossiblyNullArrayAccess occurrences="3">
+      <code>$response['Responses'][$this-&gt;table]</code>
+      <code>$response['Attributes'][$this-&gt;valueAttribute]</code>
+      <code>$response['Attributes'][$this-&gt;valueAttribute]</code>
+    </PossiblyNullArrayAccess>
+  </file>
+  <file src="src/Illuminate/Cache/FileStore.php">
+    <InvalidOperand occurrences="1">
+      <code>$expire</code>
+    </InvalidOperand>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Cache/Lock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Cache/MemcachedConnector.php">
+    <UndefinedClass occurrences="2">
+      <code>Memcached</code>
+      <code>Memcached</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="7">
+      <code>\Memcached</code>
+      <code>$memcached</code>
+      <code>$memcached</code>
+      <code>\Memcached</code>
+      <code>$memcached</code>
+      <code>\Memcached</code>
+      <code>\Memcached</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Cache/MemcachedLock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+    <UndefinedDocblockClass occurrences="6">
+      <code>\Memcached</code>
+      <code>\Memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Cache/MemcachedStore.php">
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$key</code>
+    </MoreSpecificImplementedParamType>
+    <UndefinedClass occurrences="2">
+      <code>Memcached</code>
+      <code>Memcached</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="15">
+      <code>\Memcached</code>
+      <code>\Memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>$this-&gt;memcached</code>
+      <code>\Memcached</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Cache/NullStore.php">
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$key</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Cache/RedisLock.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>bool</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Cache/RedisStore.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$value</code>
+    </InvalidScalarArgument>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>$key</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Cache/RedisTaggedCache.php">
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>void</code>
+      <code>void</code>
+    </ImplementedReturnTypeMismatch>
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>connection</code>
+      <code>connection</code>
+      <code>connection</code>
+      <code>connection</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Cache/Repository.php">
+    <InvalidArgument occurrences="8">
+      <code>new CacheMissed($key)</code>
+      <code>new CacheHit($key, $value)</code>
+      <code>new CacheMissed($key)</code>
+      <code>new CacheHit($key, $value)</code>
+      <code>new KeyWritten($key, $value, $seconds)</code>
+      <code>new KeyWritten($key, $value, $seconds)</code>
+      <code>new KeyWritten($key, $value)</code>
+      <code>new KeyForgotten($key)</code>
+    </InvalidArgument>
+  </file>
+  <file src="src/Illuminate/Cache/TaggedCache.php">
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>void</code>
+      <code>void</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidMethodCall occurrences="1">
+      <code>setTags</code>
+    </InvalidMethodCall>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$ttl</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Console/Application.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Symfony\Component\Console\Command\Command</code>
+    </InvalidNullableReturnType>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Contracts\Foundation\Application</code>
+    </MoreSpecificReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>parent::add($command)</code>
+    </NullableReturnStatement>
+    <PossiblyFalseArgument occurrences="1">
+      <code>(new PhpExecutableFinder)-&gt;find(false)</code>
+    </PossiblyFalseArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$commandName</code>
+      <code>$commandName</code>
+    </PossiblyNullArgument>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$outputBuffer ?: new BufferedOutput</code>
+    </PropertyTypeCoercion>
+    <TypeDoesNotContainType occurrences="1">
+      <code>$input</code>
+    </TypeDoesNotContainType>
+  </file>
+  <file src="src/Illuminate/Console/Command.php">
+    <InvalidArgument occurrences="1">
+      <code>[$this, 'handle']</code>
+    </InvalidArgument>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$command</code>
+      <code>$command</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullReference occurrences="1">
+      <code>find</code>
+    </PossiblyNullReference>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$laravel</code>
+    </PropertyTypeCoercion>
+  </file>
+  <file src="src/Illuminate/Console/Concerns/InteractsWithIO.php">
+    <InvalidReturnType occurrences="2">
+      <code>array</code>
+      <code>array</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Console/GeneratorCommand.php">
+    <InvalidArgument occurrences="1">
+      <code>[$this-&gt;getNamespace($name), $this-&gt;rootNamespace(), $this-&gt;userProviderModel()]</code>
+    </InvalidArgument>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;argument('name')</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Console/Scheduling/CallbackEvent.php">
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Console/Scheduling/Event.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$app-&gt;environment()</code>
+    </InvalidScalarArgument>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;timezone</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$timezone</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedClass occurrences="1">
+      <code>ClientExceptionInterface</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Console/Scheduling/ManagesFrequencies.php">
+    <InvalidScalarArgument occurrences="24">
+      <code>0</code>
+      <code>$offset</code>
+      <code>0</code>
+      <code>0</code>
+      <code>(int) $segments[0]</code>
+      <code>count($segments) === 2 ? (int) $segments[1] : '0'</code>
+      <code>0</code>
+      <code>0</code>
+      <code>0</code>
+      <code>0</code>
+      <code>$day</code>
+      <code>0</code>
+      <code>0</code>
+      <code>1</code>
+      <code>$day</code>
+      <code>0</code>
+      <code>0</code>
+      <code>0</code>
+      <code>0</code>
+      <code>1</code>
+      <code>0</code>
+      <code>0</code>
+      <code>1</code>
+      <code>1</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Console/Scheduling/Schedule.php">
+    <InvalidScalarArgument occurrences="3">
+      <code>$key</code>
+      <code>$key</code>
+      <code>$e-&gt;getCode()</code>
+    </InvalidScalarArgument>
+    <NoInterfaceProperties occurrences="2">
+      <code>$job-&gt;queue</code>
+      <code>$job-&gt;connection</code>
+    </NoInterfaceProperties>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$callback</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$timezone</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>collect($this-&gt;events)-&gt;filter</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php">
+    <UndefinedMagicPropertyFetch occurrences="1"/>
+  </file>
+  <file src="src/Illuminate/Container/BoundMethod.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$callback[0]</code>
+      <code>$callback</code>
+    </ArgumentTypeCoercion>
+    <InvalidArrayAccess occurrences="2">
+      <code>$callback[0]</code>
+      <code>$callback[1]</code>
+    </InvalidArrayAccess>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$callback</code>
+      <code>$callback</code>
+      <code>$callback[1]</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullReference occurrences="1">
+      <code>getName</code>
+    </PossiblyNullReference>
+    <RedundantCondition occurrences="1">
+      <code>! $parameter-&gt;isOptional() &amp;&amp; ! array_key_exists($paramName, $parameters)</code>
+    </RedundantCondition>
+  </file>
+  <file src="src/Illuminate/Container/Container.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$concrete</code>
+    </ArgumentTypeCoercion>
+    <InvalidArrayOffset occurrences="1">
+      <code>$this-&gt;contextual[end($this-&gt;buildStack)]</code>
+    </InvalidArrayOffset>
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Contracts\Container\Container|static</code>
+    </InvalidNullableReturnType>
+    <InvalidPropertyAssignmentValue occurrences="3">
+      <code>$this-&gt;buildStack</code>
+      <code>$this-&gt;resolvingCallbacks</code>
+      <code>$this-&gt;afterResolvingCallbacks</code>
+    </InvalidPropertyAssignmentValue>
+    <InvalidScalarArgument occurrences="1">
+      <code>$e-&gt;getCode()</code>
+    </InvalidScalarArgument>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$parameters</code>
+    </MoreSpecificImplementedParamType>
+    <NullableReturnStatement occurrences="1">
+      <code>static::$instance = $container</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$concrete</code>
+      <code>$concrete</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="3">
+      <code>Util::getParameterClassName($parameter)</code>
+      <code>$className</code>
+      <code>$className</code>
+    </PossiblyNullArgument>
+    <PossiblyNullReference occurrences="1">
+      <code>getName</code>
+    </PossiblyNullReference>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$container</code>
+    </PropertyTypeCoercion>
+  </file>
+  <file src="src/Illuminate/Container/ContextualBindingBuilder.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$implementation</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Container/RewindableGenerator.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;count</code>
+    </InvalidReturnStatement>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Container/Util.php">
+    <PossiblyNullReference occurrences="1">
+      <code>getName</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Contracts/Pipeline/Pipeline.php">
+    <UndefinedDocblockClass occurrences="1">
+      <code>dynamic|array</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Cookie/CookieJar.php">
+    <InvalidPropertyAssignmentValue occurrences="2">
+      <code>$this-&gt;queued</code>
+      <code>$this-&gt;queued</code>
+    </InvalidPropertyAssignmentValue>
+    <NullArgument occurrences="1">
+      <code>null</code>
+    </NullArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$path</code>
+      <code>$domain</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$this-&gt;sameSite</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedMethod occurrences="2">
+      <code>$this-&gt;queued[$cookie-&gt;getName()]</code>
+      <code>$this-&gt;queued[$name]</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Cookie/Middleware/EncryptCookies.php">
+    <NullArgument occurrences="1">
+      <code>null</code>
+    </NullArgument>
+  </file>
+  <file src="src/Illuminate/Database/Capsule/Manager.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$this-&gt;container</code>
+    </ArgumentTypeCoercion>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Concerns/BuildsQueries.php">
+    <PossiblyInvalidMethodCall occurrences="4">
+      <code>count</code>
+      <code>count</code>
+      <code>last</code>
+      <code>first</code>
+    </PossiblyInvalidMethodCall>
+  </file>
+  <file src="src/Illuminate/Database/Connection.php">
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$value</code>
+    </InvalidPropertyAssignmentValue>
+    <InvalidReturnStatement occurrences="1">
+      <code>call_user_func($this-&gt;reconnector, $this)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Schema\Grammars\Grammar</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="1">
+      <code>$start</code>
+    </InvalidScalarArgument>
+    <PossiblyFalsePropertyAssignmentValue occurrences="1">
+      <code>false</code>
+    </PossiblyFalsePropertyAssignmentValue>
+    <PossiblyNullArgument occurrences="1">
+      <code>$e-&gt;getPrevious()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="4">
+      <code>null</code>
+      <code>$pdo</code>
+      <code>$pdo</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedMethod occurrences="2">
+      <code>getDoctrineDriver</code>
+      <code>getDoctrineDriver</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Database/Connectors/ConnectionFactory.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$name</code>
+    </PossiblyNullArgument>
+    <UndefinedVariable occurrences="1">
+      <code>$e</code>
+    </UndefinedVariable>
+  </file>
+  <file src="src/Illuminate/Database/Connectors/Connector.php">
+    <PossiblyNullArgument occurrences="4">
+      <code>$username</code>
+      <code>$password</code>
+      <code>$username</code>
+      <code>$password</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Database/Connectors/MySqlConnector.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$connection</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>void</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Console/Factories/FactoryMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;option('model')</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;argument('name')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/BaseCommand.php">
+    <UndefinedThisPropertyFetch occurrences="1">
+      <code>$this-&gt;migrator</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/FreshCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$database</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/InstallCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;input-&gt;getOption('database')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/MigrateCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;option('database')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php">
+    <InvalidReturnStatement occurrences="1"/>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$this-&gt;input-&gt;getArgument('name')</code>
+      <code>$table</code>
+      <code>$create</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/RefreshCommand.php">
+    <PossiblyInvalidArgument occurrences="6">
+      <code>$database</code>
+      <code>$path</code>
+      <code>$step</code>
+      <code>$database</code>
+      <code>$path</code>
+      <code>$database</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/ResetCommand.php">
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$this-&gt;option('pretend')</code>
+      <code>$this-&gt;option('database')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/RollbackCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;option('database')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/StatusCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;option('database')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Console/Migrations/TableGuesser.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>array</code>
+    </InvalidNullableReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Console/Seeds/SeedCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$database ?: $this-&gt;laravel['config']['database.default']</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;input-&gt;getOption('class')</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Console/WipeCommand.php">
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$database</code>
+      <code>$database</code>
+      <code>$database</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/DatabaseManager.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$name</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/DatabaseServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Builder.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$query-&gt;getQuery()</code>
+      <code>$mixin</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="1">
+      <code>$mixin</code>
+    </InvalidArgument>
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection|static|static[]</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;whereKey($ids)-&gt;get($columns)</code>
+      <code>$model</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>\Illuminate\Database\Eloquent\Collection</code>
+      <code>\Illuminate\Database\Eloquent\Model|static</code>
+    </InvalidReturnType>
+    <LessSpecificReturnStatement occurrences="5">
+      <code>$this-&gt;where($column, $operator, $value, $boolean)-&gt;first()</code>
+      <code>$this-&gt;whereKey($id)-&gt;first($columns)</code>
+      <code>$instance</code>
+      <code>$instance</code>
+      <code>$model</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="4">
+      <code>\Illuminate\Database\Eloquent\Model|static</code>
+      <code>\Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection|static[]|static|null</code>
+      <code>\Illuminate\Database\Eloquent\Model|static</code>
+      <code>\Illuminate\Database\Eloquent\Model|static</code>
+    </MoreSpecificReturnType>
+    <NullableReturnStatement occurrences="2">
+      <code>$this-&gt;where($column, $operator, $value, $boolean)-&gt;first()</code>
+      <code>$result</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="4">
+      <code>$result</code>
+      <code>$results</code>
+      <code>$this-&gt;get($columns)</code>
+      <code>$this-&gt;getModel()</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidFunctionCall occurrences="2">
+      <code>call_user_func_array(static::$macros[$method]-&gt;bindTo($this, static::class), $parameters)</code>
+      <code>call_user_func_array(Closure::bind(static::$macros[$method], null, static::class), $parameters)</code>
+    </PossiblyInvalidFunctionCall>
+    <PossiblyNullArgument occurrences="2">
+      <code>$value</code>
+      <code>$operator</code>
+    </PossiblyNullArgument>
+    <PossiblyNullFunctionCall occurrences="1">
+      <code>$callback()</code>
+    </PossiblyNullFunctionCall>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getName</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Collection.php">
+    <InvalidParamDefault occurrences="1">
+      <code>int</code>
+    </InvalidParamDefault>
+    <LessSpecificImplementedReturnType occurrences="9">
+      <code>\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection|static</code>
+      <code>\Illuminate\Support\Collection</code>
+      <code>static|\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Support\Collection</code>
+    </LessSpecificImplementedReturnType>
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificImplementedParamType occurrences="3">
+      <code>$items</code>
+      <code>$items</code>
+      <code>$items</code>
+    </MoreSpecificImplementedParamType>
+    <MoreSpecificReturnType occurrences="1">
+      <code>static</code>
+    </MoreSpecificReturnType>
+    <UndefinedMagicPropertyFetch occurrences="1"/>
+    <UndefinedThisPropertyFetch occurrences="5">
+      <code>$this-&gt;each</code>
+      <code>$this-&gt;each</code>
+      <code>$this-&gt;each</code>
+      <code>$this-&gt;map</code>
+      <code>$this-&gt;map</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="1">
+      <code>explode(':', $this-&gt;getCasts()[$key], 2)[1]</code>
+    </InvalidScalarArgument>
+    <PossiblyFalseReference occurrences="1">
+      <code>startOfDay</code>
+    </PossiblyFalseReference>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>format</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullArgument occurrences="1">
+      <code>get_class_methods($class)</code>
+    </PossiblyNullArgument>
+    <PossiblyUndefinedVariable occurrences="1">
+      <code>$relation</code>
+    </PossiblyUndefinedVariable>
+    <TooManyArguments occurrences="1"/>
+    <UndefinedClass occurrences="1">
+      <code>new $castType(...$arguments)</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Concerns/HasEvents.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$class</code>
+    </ArgumentTypeCoercion>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$through</code>
+      <code>$through</code>
+    </ArgumentTypeCoercion>
+    <PossiblyNullArgument occurrences="8">
+      <code>$type</code>
+      <code>$id</code>
+      <code>$type</code>
+      <code>$id</code>
+      <code>$ownerKey</code>
+      <code>$ownerKey</code>
+      <code>$type</code>
+      <code>$id</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Concerns/HasTimestamps.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$relation</code>
+      <code>$query</code>
+    </ArgumentTypeCoercion>
+    <ImplicitToStringCast occurrences="1">
+      <code>new Expression('('.$query-&gt;toSql().')')</code>
+    </ImplicitToStringCast>
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Builder|static</code>
+    </InvalidNullableReturnType>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/FactoryBuilder.php">
+    <InvalidArgument occurrences="1">
+      <code>$records</code>
+    </InvalidArgument>
+    <TooManyArguments occurrences="2"/>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Model.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>static::query()-&gt;useWritePdo()</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>\Illuminate\Database\Query\Builder</code>
+      <code>\Illuminate\Database\Eloquent\Collection|static[]</code>
+    </InvalidReturnType>
+    <LessSpecificReturnStatement occurrences="2">
+      <code>static::$resolver-&gt;connection($connection)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>static|null</code>
+      <code>\Illuminate\Database\Connection</code>
+    </MoreSpecificReturnType>
+    <PossiblyInvalidArgument occurrences="5">
+      <code>$query</code>
+      <code>$query</code>
+      <code>$this-&gt;newModelQuery()</code>
+      <code>$this-&gt;newQueryWithoutScopes()</code>
+      <code>$this-&gt;newModelQuery()</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>attributes</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyInvalidPropertyFetch occurrences="1">
+      <code>static::newQueryWithoutScopes()-&gt;findOrFail($this-&gt;getKey())-&gt;attributes</code>
+    </PossiblyInvalidPropertyFetch>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>getName</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="1">
+      <code>$models</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>array</code>
+    </InvalidReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$result</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$result</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$relationName</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/Concerns/AsPivot.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>int</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Builder</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="3">
+      <code>$ids</code>
+      <code>$ids[0]</code>
+      <code>$id</code>
+    </InvalidScalarArgument>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$ids</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php">
+    <PossiblyUndefinedVariable occurrences="1">
+      <code>$record</code>
+    </PossiblyUndefinedVariable>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;prepareQueryBuilder()-&gt;cursor()</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Generator</code>
+    </InvalidReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$result</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$result</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$instance</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Support\Collection|\Illuminate\Database\Eloquent\Model</code>
+    </InvalidReturnType>
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$instance</code>
+      <code>$instance</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>\Illuminate\Database\Eloquent\Model</code>
+      <code>\Illuminate\Database\Eloquent\Model</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/MorphPivot.php">
+    <ImplementedParamTypeMismatch occurrences="1">
+      <code>$ids</code>
+    </ImplementedParamTypeMismatch>
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>int</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnStatement occurrences="1">
+      <code>$query</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Builder</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="3">
+      <code>$ids</code>
+      <code>$ids</code>
+      <code>$ids</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/MorphTo.php">
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$model</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Database/Eloquent/Relations/Relation.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;query-&gt;get($columns)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Collection</code>
+    </InvalidReturnType>
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$query-&gt;getModel()</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Events/ConnectionEvent.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$connection-&gt;getName()</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Events/QueryExecuted.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="2">
+      <code>$time</code>
+      <code>$connection-&gt;getName()</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Grammar.php">
+    <ImplicitToStringCast occurrences="3">
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </ImplicitToStringCast>
+    <InvalidArgument occurrences="1">
+      <code>[$this, __FUNCTION__]</code>
+    </InvalidArgument>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$table</code>
+      <code>$value</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;resolver-&gt;connection($this-&gt;connection)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Database\Connection</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Migrations/Migrator.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$migration</code>
+      <code>$migration</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="2">
+      <code>new NoPendingMigrations('up')</code>
+      <code>new NoPendingMigrations('down')</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;pretendToRun($migration, 'up')</code>
+      <code>$this-&gt;pretendToRun($instance, 'down')</code>
+    </InvalidReturnStatement>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;resolver-&gt;connection($connection ?: $this-&gt;connection)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Database\Connection</code>
+    </MoreSpecificReturnType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$paths</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$name</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="2">
+      <code>$dispatcher</code>
+      <code>$name</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/MySqlConnection.php">
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$this-&gt;withTablePrefix(new QueryGrammar)</code>
+      <code>$this-&gt;withTablePrefix(new SchemaGrammar)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>\Illuminate\Database\Query\Grammars\MySqlGrammar</code>
+      <code>\Illuminate\Database\Schema\Grammars\MySqlGrammar</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/PostgresConnection.php">
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$this-&gt;withTablePrefix(new QueryGrammar)</code>
+      <code>$this-&gt;withTablePrefix(new SchemaGrammar)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>\Illuminate\Database\Query\Grammars\PostgresGrammar</code>
+      <code>\Illuminate\Database\Schema\Grammars\PostgresGrammar</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Query/Builder.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$query</code>
+    </ArgumentTypeCoercion>
+    <ImplicitToStringCast occurrences="5">
+      <code>new Expression($expression)</code>
+      <code>new Expression($expression)</code>
+      <code>new Expression('('.$sub.')')</code>
+      <code>$column</code>
+      <code>new Expression('('.$clone-&gt;toSql().') as '.$this-&gt;grammar-&gt;wrap('aggregate_table'))</code>
+    </ImplicitToStringCast>
+    <InvalidScalarArgument occurrences="2">
+      <code>$value</code>
+      <code>$value</code>
+    </InvalidScalarArgument>
+    <PossiblyInvalidArgument occurrences="11">
+      <code>$column</code>
+      <code>$column</code>
+      <code>$column</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidCast occurrences="1">
+      <code>$table</code>
+    </PossiblyInvalidCast>
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$as ? "{$table} as {$as}" : $table</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+    <PossiblyNullArgument occurrences="19">
+      <code>$as</code>
+      <code>$value</code>
+      <code>$operator</code>
+      <code>$value</code>
+      <code>$operator</code>
+      <code>$boolean</code>
+      <code>$operator</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$operator</code>
+      <code>$value</code>
+      <code>$operator</code>
+      <code>$key</code>
+      <code>$column</code>
+      <code>$key</code>
+      <code>$column</code>
+      <code>$key</code>
+      <code>$sequence</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="3">
+      <code>null</code>
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>getQueryGrammar</code>
+      <code>getPostProcessor</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Query/Grammars/Grammar.php">
+    <ImplicitToStringCast occurrences="5">
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </ImplicitToStringCast>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$value</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/Query/Grammars/MySqlGrammar.php">
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>$this</code>
+      <code>$this</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnStatement occurrences="4">
+      <code>'(json_extract('.$field.$path.') is null OR json_type(json_extract('.$field.$path.')) = \'NULL\')'</code>
+      <code>parent::whereNull($query, $where)</code>
+      <code>'(json_extract('.$field.$path.') is not null AND json_type(json_extract('.$field.$path.')) != \'NULL\')'</code>
+      <code>parent::whereNotNull($query, $where)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>$this</code>
+      <code>$this</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$table</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Query/JoinClause.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>new $class($this-&gt;parentConnection, $this-&gt;parentGrammar, $this-&gt;parentProcessor)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Database\Query\Builder</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Query/Processors/PostgresProcessor.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>recordsHaveBeenModified</code>
+      <code>selectFromWriteConnection</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Query/Processors/Processor.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getPdo</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/Query/Processors/SqlServerProcessor.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$connection</code>
+    </ArgumentTypeCoercion>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>getConfig</code>
+      <code>getPdo</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Database/QueryException.php">
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$previous-&gt;getCode()</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Database/SQLiteConnection.php">
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$this-&gt;withTablePrefix(new QueryGrammar)</code>
+      <code>$this-&gt;withTablePrefix(new SchemaGrammar)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>\Illuminate\Database\Query\Grammars\SQLiteGrammar</code>
+      <code>\Illuminate\Database\Schema\Grammars\SQLiteGrammar</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Schema/Blueprint.php">
+    <PossiblyNullArgument occurrences="6">
+      <code>$index</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Database/Schema/ForeignKeyDefinition.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;onDelete('cascade')</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>$this</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Schema/Grammars/ChangeColumn.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$tableDiff</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/Schema/Grammars/Grammar.php">
+    <InvalidArgument occurrences="1">
+      <code>$column</code>
+    </InvalidArgument>
+    <UndefinedThisPropertyFetch occurrences="1">
+      <code>$this-&gt;modifiers</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php">
+    <InvalidReturnType occurrences="1">
+      <code>string</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>string|null</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidArgument occurrences="15">
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>$blueprint</code>
+      <code>[$this, __FUNCTION__]</code>
+    </InvalidArgument>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$table</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Database/Schema/MySqlBuilder.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>array</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Database/Schema/PostgresBuilder.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>array</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Database/Schema/SQLiteBuilder.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;refreshDatabaseFile()</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Database/Seeder.php">
+    <InvalidArgument occurrences="1">
+      <code>[$this, 'run']</code>
+    </InvalidArgument>
+  </file>
+  <file src="src/Illuminate/Database/SqlServerConnection.php">
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$this-&gt;withTablePrefix(new QueryGrammar)</code>
+      <code>$this-&gt;withTablePrefix(new SchemaGrammar)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="2">
+      <code>\Illuminate\Database\Query\Grammars\SqlServerGrammar</code>
+      <code>\Illuminate\Database\Schema\Grammars\SqlServerGrammar</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Events/Dispatcher.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$class</code>
+      <code>$class</code>
+    </ArgumentTypeCoercion>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>connection</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Events/NullDispatcher.php">
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$dispatcher</code>
+    </InvalidPropertyAssignmentValue>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>listen</code>
+      <code>hasListeners</code>
+      <code>subscribe</code>
+      <code>flush</code>
+      <code>forget</code>
+      <code>forgetPushed</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Filesystem/Filesystem.php">
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;put($path, $data.$this-&gt;get($path))</code>
+      <code>$this-&gt;put($path, $data)</code>
+      <code>symlink($target, $link)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="3">
+      <code>mixed</code>
+      <code>int</code>
+      <code>void</code>
+    </InvalidReturnType>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$this-&gt;mimeType($path)</code>
+    </PossiblyFalseArgument>
+  </file>
+  <file src="src/Illuminate/Filesystem/FilesystemAdapter.php">
+    <FalsableReturnStatement occurrences="3">
+      <code>$this-&gt;driver-&gt;read($path)</code>
+      <code>$this-&gt;driver-&gt;getSize($path)</code>
+      <code>$this-&gt;driver-&gt;getTimestamp($path)</code>
+    </FalsableReturnStatement>
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;putFile($path, $contents, $options)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="3">
+      <code>$e-&gt;getCode()</code>
+      <code>$e-&gt;getCode()</code>
+      <code>$e-&gt;getCode()</code>
+    </InvalidScalarArgument>
+    <MismatchingDocblockParamType occurrences="2">
+      <code>array|null</code>
+      <code>array|null</code>
+    </MismatchingDocblockParamType>
+    <PossiblyNullArgument occurrences="7">
+      <code>$disposition</code>
+      <code>$stream</code>
+      <code>$stream</code>
+      <code>$contents-&gt;detach()</code>
+      <code>$this-&gt;parseVisibility($visibility)</code>
+      <code>$directory</code>
+      <code>$directory</code>
+    </PossiblyNullArgument>
+    <UndefinedClass occurrences="2">
+      <code>AwsS3Adapter</code>
+      <code>AwsS3Adapter</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="2">
+      <code>\League\Flysystem\AwsS3v3\AwsS3Adapter</code>
+      <code>\League\Flysystem\AwsS3v3\AwsS3Adapter</code>
+    </UndefinedDocblockClass>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>getAdapter</code>
+      <code>getAdapter</code>
+      <code>getConfig</code>
+      <code>getConfig</code>
+      <code>getAdapter</code>
+      <code>getAdapter</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Filesystem/FilesystemManager.php">
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Contracts\Filesystem\Cloud</code>
+    </MoreSpecificReturnType>
+    <UndefinedClass occurrences="2">
+      <code>SftpAdapter</code>
+      <code>S3Adapter</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Filesystem/FilesystemServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Application.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$instance = new $provider($this)</code>
+      <code>$instance</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="2">
+      <code>$value</code>
+      <code>[$provider, 'boot']</code>
+    </InvalidArgument>
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$this-&gt;terminatingCallbacks</code>
+    </InvalidPropertyAssignmentValue>
+    <InvalidReturnStatement occurrences="1"/>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>new $provider($this)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$bootstrappers</code>
+    </MoreSpecificImplementedParamType>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Support\ServiceProvider</code>
+    </MoreSpecificReturnType>
+    <UndefinedPropertyFetch occurrences="1">
+      <code>$provider-&gt;singletons</code>
+    </UndefinedPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Foundation/Auth/Access/Authorizable.php">
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>forUser</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Bootstrap/HandleExceptions.php">
+    <InvalidArgument occurrences="1">
+      <code>[$this, 'handleError']</code>
+    </InvalidArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>getCachedConfigPath</code>
+      <code>detectEnvironment</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Bootstrap/LoadEnvironmentVariables.php">
+    <UndefinedInterfaceMethod occurrences="7">
+      <code>configurationIsCached</code>
+      <code>environmentFile</code>
+      <code>environmentFile</code>
+      <code>environmentPath</code>
+      <code>loadEnvironmentFrom</code>
+      <code>environmentPath</code>
+      <code>environmentFile</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Bus/Dispatchable.php">
+    <PossiblyUndefinedMethod occurrences="2">
+      <code>dispatchNow</code>
+      <code>dispatchAfterResponse</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Bus/PendingDispatch.php">
+    <PossiblyUndefinedMethod occurrences="2">
+      <code>dispatchAfterResponse</code>
+      <code>dispatch</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/ComposerScripts.php">
+    <UndefinedClass occurrences="3">
+      <code>\Composer\Script\Event</code>
+      <code>\Composer\Script\Event</code>
+      <code>\Composer\Script\Event</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ChannelMakeCommand.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;userProviderModel()</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ClearCompiledCommand.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>getCachedServicesPath</code>
+      <code>getCachedPackagesPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ComponentMakeCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>false</code>
+    </InvalidReturnStatement>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;argument('name')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ConfigCacheCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getCachedConfigPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ConfigClearCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getCachedConfigPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ConsoleMakeCommand.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;option('command')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/DownCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>true</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>int</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/EnvironmentCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/EventCacheCommand.php">
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getCachedEventsPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/EventClearCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getCachedEventsPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/Kernel.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$output</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/KeyGenerateCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;line('&lt;comment&gt;'.$key.'&lt;/comment&gt;')</code>
+    </InvalidReturnStatement>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>environmentFilePath</code>
+      <code>environmentFilePath</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ListenerMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$event</code>
+      <code>$event</code>
+      <code>$event</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/MailMakeCommand.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$this-&gt;option('markdown')</code>
+      <code>$this-&gt;option('markdown')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ModelMakeCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>false</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="4">
+      <code>$this-&gt;argument('name')</code>
+      <code>$this-&gt;argument('name')</code>
+      <code>$this-&gt;argument('name')</code>
+      <code>$this-&gt;argument('name')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/NotificationMakeCommand.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$this-&gt;option('markdown')</code>
+      <code>$this-&gt;option('markdown')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ObserverMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$model</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/PolicyMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$model</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;userProviderModel()</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ResourceMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;argument('name')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/RouteCacheCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;error("Your application doesn't have any routes.")</code>
+    </InvalidReturnStatement>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>getCachedRoutesPath</code>
+      <code>$this-&gt;getFreshApplication()</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/RouteClearCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getCachedRoutesPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/RouteListCommand.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>array</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;error("Your application doesn't have any routes.")</code>
+      <code>$this-&gt;error("Your application doesn't have any routes matching the given criteria.")</code>
+    </InvalidReturnStatement>
+    <NullableReturnStatement occurrences="1"/>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$sort</code>
+      <code>$this-&gt;option('method')</code>
+      <code>$columns</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$this-&gt;option('name')</code>
+      <code>$this-&gt;option('path')</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ServeCommand.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;input-&gt;getOption('host')</code>
+      <code>$port + $this-&gt;portOffset</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;input-&gt;getOption('host')</code>
+    </NullableReturnStatement>
+    <PossiblyFalseArgument occurrences="1">
+      <code>(new PhpExecutableFinder)-&gt;find(false)</code>
+    </PossiblyFalseArgument>
+    <PossiblyInvalidOperand occurrences="2">
+      <code>$port</code>
+      <code>$this-&gt;portOffset</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/StorageLinkCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/StubPublishCommand.php">
+    <PossiblyFalseArgument occurrences="1">
+      <code>$from</code>
+    </PossiblyFalseArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/UpCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>true</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>int</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/VendorPublishCommand.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;publishFile($from, $to)</code>
+      <code>$this-&gt;publishDirectory($from, $to)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$manager-&gt;read('from://'.$file['path'])</code>
+    </PossiblyFalseArgument>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$choice</code>
+      <code>preg_filter('/^/', '&lt;comment&gt;Provider: &lt;/comment&gt;', Arr::sort(ServiceProvider::publishableProviders()))</code>
+      <code>preg_filter('/^/', '&lt;comment&gt;Tag: &lt;/comment&gt;', Arr::sort(ServiceProvider::publishableGroups()))</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$this-&gt;provider</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ViewCacheCommand.php">
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Console/ViewClearCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/EnvironmentDetector.php">
+    <InvalidOperand occurrences="1">
+      <code>$i</code>
+    </InvalidOperand>
+  </file>
+  <file src="src/Illuminate/Foundation/Events/DiscoverEvents.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>static::classFromFile($listener, $basePath)</code>
+    </ArgumentTypeCoercion>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>path</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Exceptions/Handler.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$e</code>
+    </ArgumentTypeCoercion>
+    <InvalidArgument occurrences="1">
+      <code>$reportCallable</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="1">
+      <code>$response-&gt;withException($e)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Http\Response</code>
+    </InvalidReturnType>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>previous</code>
+    </PossiblyInvalidMethodCall>
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>getStatusCode</code>
+      <code>getHeaders</code>
+      <code>getStatusCode</code>
+      <code>getHeaders</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Http/FormRequest.php">
+    <InvalidArgument occurrences="3">
+      <code>[$this, 'validator']</code>
+      <code>[$this, 'rules']</code>
+      <code>[$this, 'authorize']</code>
+    </InvalidArgument>
+    <UndefinedMagicMethod occurrences="1">
+      <code>withValidator</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Http/Kernel.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$response</code>
+      <code>$route</code>
+    </ArgumentTypeCoercion>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$response</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="3">
+      <code>$request</code>
+      <code>$request</code>
+      <code>$response</code>
+    </MoreSpecificImplementedParamType>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Http\Response</code>
+    </MoreSpecificReturnType>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$token</code>
+    </InvalidReturnStatement>
+    <NullableReturnStatement occurrences="1">
+      <code>$token</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$header</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/PackageManifest.php">
+    <PossiblyNullArgument occurrences="5">
+      <code>$this-&gt;manifestPath</code>
+      <code>$this-&gt;manifestPath</code>
+      <code>$this-&gt;manifestPath</code>
+      <code>$this-&gt;manifestPath</code>
+      <code>$this-&gt;manifestPath</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/ProviderRepository.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>new $provider($this-&gt;app)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Support\ServiceProvider</code>
+    </MoreSpecificReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$manifest</code>
+    </PossiblyNullArgument>
+    <PossiblyNullArrayAccess occurrences="1">
+      <code>$manifest['when']</code>
+    </PossiblyNullArrayAccess>
+    <PossiblyNullIterator occurrences="1">
+      <code>$manifest['when']</code>
+    </PossiblyNullIterator>
+  </file>
+  <file src="src/Illuminate/Foundation/Providers/FoundationServiceProvider.php">
+    <InvalidArgument occurrences="1">
+      <code>$this</code>
+    </InvalidArgument>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>validate</code>
+    </PossiblyUndefinedMethod>
+    <UndefinedMethod occurrences="2">
+      <code>all</code>
+      <code>validate</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>eventsAreCached</code>
+      <code>getCachedEventsPath</code>
+      <code>path</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php">
+    <InvalidArgument occurrences="1">
+      <code>[$this, 'map']</code>
+    </InvalidArgument>
+    <UndefinedInterfaceMethod occurrences="5">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>routesAreCached</code>
+      <code>getCachedRoutesPath</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.php">
+    <NoInterfaceProperties occurrences="2">
+      <code>$user-&gt;wasRecentlyCreated</code>
+      <code>$user-&gt;wasRecentlyCreated</code>
+    </NoInterfaceProperties>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;app</code>
+      <code>offsetUnset</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.php">
+    <MoreSpecificReturnType occurrences="3">
+      <code>\Mockery\MockInterface</code>
+      <code>\Mockery\MockInterface</code>
+      <code>\Mockery\MockInterface</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.php">
+    <PossiblyInvalidMethodCall occurrences="5">
+      <code>getTable</code>
+      <code>getKey</code>
+      <code>getKeyName</code>
+      <code>getConnectionName</code>
+      <code>getDeletedAtColumn</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullArgument occurrences="1">
+      <code>$deletedAtColumn</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithExceptionHandling.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$e-&gt;getCode()</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/InteractsWithSession.php">
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>url($uri)</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$response-&gt;headers-&gt;get('Location')</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.php">
+    <PossiblyUndefinedMethod occurrences="3">
+      <code>andReturnUsing</code>
+      <code>andReturnUsing</code>
+      <code>andReturnUsing</code>
+    </PossiblyUndefinedMethod>
+    <UndefinedMagicMethod occurrences="3">
+      <code>andReturnUsing</code>
+      <code>andReturnUsing</code>
+      <code>andReturnUsing</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/Testing/TestCase.php">
+    <InternalMethod occurrences="1">
+      <code>addToAssertionCount</code>
+    </InternalMethod>
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$this-&gt;createApplication()</code>
+    </InvalidPropertyAssignmentValue>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMethod occurrences="6">
+      <code>refreshDatabase</code>
+      <code>runDatabaseMigrations</code>
+      <code>beginDatabaseTransaction</code>
+      <code>disableMiddlewareForAllTests</code>
+      <code>disableEventsForAllTests</code>
+      <code>setUpFaker</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Foundation/helpers.php">
+    <InvalidArgument occurrences="3">
+      <code>$value</code>
+      <code>$status</code>
+      <code>$data</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="2">
+      <code>url($path, $parameters, true)</code>
+      <code>trans($key, $replace, $locale)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>string|array|null</code>
+    </InvalidReturnType>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>request()</code>
+      <code>$content</code>
+      <code>$data</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidFunctionCall occurrences="1">
+      <code>app(Mix::class)(...func_get_args())</code>
+    </PossiblyInvalidFunctionCall>
+    <PossiblyNullArgument occurrences="1">
+      <code>$view</code>
+    </PossiblyNullArgument>
+    <PossiblyUndefinedMethod occurrences="30">
+      <code>abort</code>
+      <code>action</code>
+      <code>path</code>
+      <code>asset</code>
+      <code>guard</code>
+      <code>back</code>
+      <code>driver</code>
+      <code>event</code>
+      <code>put</code>
+      <code>set</code>
+      <code>token</code>
+      <code>decrypt</code>
+      <code>dispatchNow</code>
+      <code>encrypt</code>
+      <code>dispatch</code>
+      <code>of</code>
+      <code>of</code>
+      <code>info</code>
+      <code>debug</code>
+      <code>driver</code>
+      <code>old</code>
+      <code>getPolicyFor</code>
+      <code>to</code>
+      <code>report</code>
+      <code>only</code>
+      <code>__get</code>
+      <code>route</code>
+      <code>put</code>
+      <code>choice</code>
+      <code>to</code>
+    </PossiblyUndefinedMethod>
+    <TooManyArguments occurrences="7">
+      <code>get</code>
+      <code>make</code>
+      <code>make</code>
+      <code>get</code>
+      <code>get</code>
+      <code>make</code>
+      <code>make</code>
+    </TooManyArguments>
+  </file>
+  <file src="src/Illuminate/Hashing/Argon2IdHasher.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>PASSWORD_ARGON2ID</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>int</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Hashing/ArgonHasher.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>PASSWORD_ARGON2I</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>int</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Hashing/BcryptHasher.php">
+    <InvalidScalarArgument occurrences="2">
+      <code>PASSWORD_BCRYPT</code>
+      <code>PASSWORD_BCRYPT</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Http/Client/PendingRequest.php">
+    <InvalidPropertyAssignmentValue occurrences="1"/>
+    <RedundantCondition occurrences="1">
+      <code>is_array($parsedData)</code>
+    </RedundantCondition>
+    <TypeDoesNotContainType occurrences="1">
+      <code>[]</code>
+    </TypeDoesNotContainType>
+    <UndefinedDocblockClass occurrences="1">
+      <code>\GuzzleHttp\Psr7\RequestInterface</code>
+    </UndefinedDocblockClass>
+    <UndefinedMagicPropertyFetch occurrences="1"/>
+  </file>
+  <file src="src/Illuminate/Http/Client/Response.php">
+    <PropertyTypeCoercion occurrences="1">
+      <code>$response</code>
+    </PropertyTypeCoercion>
+    <UndefinedThisPropertyFetch occurrences="2">
+      <code>$this-&gt;transferStats</code>
+      <code>$this-&gt;cookies</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Http/Client/ResponseSequence.php">
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$response</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Http/Concerns/InteractsWithContentTypes.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;header('CONTENT_TYPE')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Http/Concerns/InteractsWithInput.php">
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$header</code>
+      <code>$header</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="5">
+      <code>$key</code>
+      <code>$key</code>
+      <code>$key</code>
+      <code>$key</code>
+      <code>$key</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Http/FileHelpers.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+  </file>
+  <file src="src/Illuminate/Http/Middleware/SetCacheHeaders.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$options['last_modified']</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Http/Middleware/TrustHosts.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Http/RedirectResponse.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$provider-&gt;getMessageBag()</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Support\MessageBag</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/Http/Request.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\Illuminate\Session\Store|null</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$session</code>
+    </InvalidPropertyAssignmentValue>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;session</code>
+      <code>$this-&gt;session</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>\Illuminate\Session\Store</code>
+      <code>\Illuminate\Session\Store|null</code>
+    </InvalidReturnType>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$request</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>static</code>
+    </MoreSpecificReturnType>
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$this-&gt;query()</code>
+      <code>$this-&gt;query()</code>
+      <code>$this-&gt;getContent()</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidMethodCall occurrences="5">
+      <code>named</code>
+      <code>methods</code>
+      <code>getDomain</code>
+      <code>uri</code>
+      <code>parameters</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;headers-&gt;get('Purpose')</code>
+    </PossiblyNullArgument>
+    <PossiblyNullReference occurrences="2">
+      <code>named</code>
+      <code>parameters</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Http/Resources/CollectsResources.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\ArrayIterator</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Http/Resources/Json/ResourceCollection.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$this-&gt;collection-&gt;map</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Http/Resources/Json/ResourceResponse.php">
+    <InvalidPropertyFetch occurrences="1">
+      <code>get_class($this-&gt;resource)::$wrap</code>
+    </InvalidPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Http/UploadedFile.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;guessClientExtension()</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Log/LogManager.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;app-&gt;bound('env') ? $this-&gt;app-&gt;environment() : 'production'</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>$this</code>
+    </InvalidReturnType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$config['handler']</code>
+    </PossiblyInvalidArgument>
+    <TypeDoesNotContainType occurrences="1">
+      <code>Monolog::API === 1</code>
+    </TypeDoesNotContainType>
+    <UndefinedInterfaceMethod occurrences="10">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>getHandlers</code>
+      <code>$this-&gt;app</code>
+      <code>setFormatter</code>
+      <code>setFormatter</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Log/Logger.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Contracts\Events\Dispatcher</code>
+    </InvalidNullableReturnType>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$level</code>
+    </MoreSpecificImplementedParamType>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;dispatcher</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Mail/MailManager.php">
+    <PossiblyUndefinedVariable occurrences="1">
+      <code>$method</code>
+    </PossiblyUndefinedVariable>
+    <UndefinedClass occurrences="2">
+      <code>PostmarkTransport</code>
+      <code>ThrowExceptionOnFailurePlugin</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="18">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Mail/Mailable.php">
+    <InvalidArgument occurrences="2">
+      <code>[$this, 'build']</code>
+      <code>[$this, 'build']</code>
+    </InvalidArgument>
+    <InvalidNullableReturnType occurrences="1">
+      <code>$this</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="2">
+      <code>$address</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>array</code>
+    </InvalidReturnType>
+    <NullArgument occurrences="1">
+      <code>null</code>
+    </NullArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$queueName ?: null</code>
+      <code>$queueName ?: null</code>
+    </PossiblyNullArgument>
+    <UndefinedThisPropertyFetch occurrences="4">
+      <code>$this-&gt;connection</code>
+      <code>$this-&gt;queue</code>
+      <code>$this-&gt;connection</code>
+      <code>$this-&gt;queue</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Mail/Mailer.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$this-&gt;swift-&gt;createMessage('message')</code>
+    </ArgumentTypeCoercion>
+    <InvalidReturnStatement occurrences="4">
+      <code>$this-&gt;send(['html' =&gt; new HtmlString($html)], [], $callback)</code>
+      <code>$this-&gt;send(['raw' =&gt; $text], [], $callback)</code>
+      <code>$this-&gt;send(['text' =&gt; $view], $data, $callback)</code>
+      <code>$this-&gt;sendMailable($view)</code>
+    </InvalidReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$view</code>
+      <code>$view</code>
+    </MoreSpecificImplementedParamType>
+    <NullArgument occurrences="2">
+      <code>null</code>
+      <code>null</code>
+    </NullArgument>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>is_null($queue) ? $this-&gt;queue : $queue</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullFunctionCall occurrences="1">
+      <code>$callback($message)</code>
+    </PossiblyNullFunctionCall>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$this-&gt;failedRecipients</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>onQueue</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Mail/Markdown.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>flushFinderCache</code>
+      <code>flushFinderCache</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Mail/Message.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$attachment</code>
+    </ArgumentTypeCoercion>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$address</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="4">
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Mail/PendingMail.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$users-&gt;preferredLocale()</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>queue</code>
+      <code>later</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Mail/SendQueuedMailable.php">
+    <NoInterfaceProperties occurrences="4">
+      <code>$mailable-&gt;tries</code>
+      <code>$mailable-&gt;timeout</code>
+      <code>$this-&gt;mailable-&gt;retryAfter</code>
+      <code>$this-&gt;mailable-&gt;retryAfter</code>
+    </NoInterfaceProperties>
+  </file>
+  <file src="src/Illuminate/Mail/Transport/SesTransport.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$message-&gt;getSender() ?: $message-&gt;getFrom()</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Notifications/AnonymousNotifiable.php">
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <PossiblyUndefinedMethod occurrences="2">
+      <code>send</code>
+      <code>sendNow</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Notifications/ChannelManager.php">
+    <InvalidReturnStatement occurrences="2"/>
+  </file>
+  <file src="src/Illuminate/Notifications/Channels/MailChannel.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$message-&gt;send($this-&gt;mailer)</code>
+    </InvalidReturnStatement>
+    <PossiblyNullArgument occurrences="2">
+      <code>$message-&gt;markdown</code>
+      <code>$message-&gt;markdown</code>
+    </PossiblyNullArgument>
+    <UndefinedMethod occurrences="1">
+      <code>toMail</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Notifications/Console/NotificationTableCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Notifications/DatabaseNotificationCollection.php">
+    <UndefinedThisPropertyFetch occurrences="2">
+      <code>$this-&gt;each</code>
+      <code>$this-&gt;each</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Notifications/Events/BroadcastNotificationCreated.php">
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>array</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Notifications/Messages/MailMessage.php">
+    <PossiblyInvalidArgument occurrences="3">
+      <code>$address</code>
+      <code>$address</code>
+      <code>$address</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Notifications/NotificationSender.php">
+    <InvalidDocblock occurrences="1">
+      <code>array[\Illuminate\Notifications\Channels\Notification]</code>
+    </InvalidDocblock>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;queueNotification($notifiables, $notification)</code>
+      <code>$this-&gt;sendNow($notifiables, $notification)</code>
+    </InvalidReturnStatement>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$notifiables</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Collection|array</code>
+    </MoreSpecificReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;preferredLocale($notifiable, $notification)</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Notifications/SendQueuedNotifications.php">
+    <UndefinedDocblockClass occurrences="2">
+      <code>\Illuminate\Notifications\Notifiable|\Illuminate\Support\Collection</code>
+      <code>\Illuminate\Notifications\Notifiable|\Illuminate\Support\Collection</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Notifications/resources/views/email.blade.php">
+    <UndefinedGlobalVariable occurrences="1">
+      <code>$level</code>
+    </UndefinedGlobalVariable>
+  </file>
+  <file src="src/Illuminate/Pagination/AbstractPaginator.php">
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>\ArrayIterator</code>
+      <code>$this|string|null</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidNullableReturnType occurrences="2">
+      <code>int</code>
+      <code>int</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="2">
+      <code>count($this-&gt;items) &gt; 0 ? ($this-&gt;currentPage - 1) * $this-&gt;perPage + 1 : null</code>
+      <code>count($this-&gt;items) &gt; 0 ? $this-&gt;firstItem() + $this-&gt;count() - 1 : null</code>
+    </NullableReturnStatement>
+    <PossiblyNullArgument occurrences="2">
+      <code>$this-&gt;path()</code>
+      <code>$value</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Pagination/LengthAwarePaginator.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\Illuminate\Contracts\Support\Htmlable</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnStatement occurrences="1"/>
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Contracts\Support\Htmlable</code>
+    </InvalidReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$currentPage</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Pagination/PaginationServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Pagination/Paginator.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\Illuminate\Contracts\Support\Htmlable</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;render($view, $data)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>\Illuminate\Contracts\Support\Htmlable</code>
+    </InvalidReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$currentPage</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Pagination/UrlWindow.php">
+    <NoInterfaceProperties occurrences="1">
+      <code>$this-&gt;paginator-&gt;onEachSide</code>
+    </NoInterfaceProperties>
+  </file>
+  <file src="src/Illuminate/Pipeline/Hub.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;pipeline('default', $callback)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Pipeline/Pipeline.php">
+    <PossiblyInvalidFunctionCall occurrences="1">
+      <code>$pipe(...$parameters)</code>
+    </PossiblyInvalidFunctionCall>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$container</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Queue/BeanstalkdQueue.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$id</code>
+    </InvalidScalarArgument>
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <NoInterfaceProperties occurrences="1">
+      <code>$this-&gt;pheanstalk-&gt;statsTube($queue)-&gt;current_jobs_ready</code>
+    </NoInterfaceProperties>
+  </file>
+  <file src="src/Illuminate/Queue/CallQueuedHandler.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$class</code>
+    </ArgumentTypeCoercion>
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;handleModelNotFound($job, $e)</code>
+      <code>$job-&gt;delete()</code>
+      <code>$job-&gt;fail($e)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Queue/Capsule/Manager.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+    </ArgumentTypeCoercion>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;container</code>
+      <code>$this-&gt;container</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Connectors/DatabaseConnector.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$this-&gt;connections-&gt;connection($config['connection'] ?? null)</code>
+    </ArgumentTypeCoercion>
+  </file>
+  <file src="src/Illuminate/Queue/Connectors/RedisConnector.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$connection</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Queue/Console/FailedTableCommand.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/FlushFailedCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/ForgetFailedCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/ListFailedCommand.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;info('No failed jobs!')</code>
+    </InvalidReturnStatement>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;extractJobName($failed['payload'])</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/ListenCommand.php">
+    <InvalidArgument occurrences="5">
+      <code>$this-&gt;option('delay')</code>
+      <code>$this-&gt;option('memory')</code>
+      <code>$this-&gt;option('timeout')</code>
+      <code>$this-&gt;option('sleep')</code>
+      <code>$this-&gt;option('tries')</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="1"/>
+    <PossiblyInvalidArgument occurrences="4">
+      <code>$connection = $this-&gt;input-&gt;getArgument('connection')</code>
+      <code>$connection</code>
+      <code>$this-&gt;option('env')</code>
+      <code>$this-&gt;option('force')</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/RetryCommand.php">
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/TableCommand.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/Console/WorkCommand.php">
+    <InvalidArgument occurrences="6">
+      <code>$this-&gt;option('sleep')</code>
+      <code>$this-&gt;option('delay')</code>
+      <code>$this-&gt;option('memory')</code>
+      <code>$this-&gt;option('timeout')</code>
+      <code>$this-&gt;option('sleep')</code>
+      <code>$this-&gt;option('tries')</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="5">
+      <code>$this-&gt;worker-&gt;sleep($this-&gt;option('sleep'))</code>
+      <code>$this-&gt;writeStatus($job, 'Processing', 'comment')</code>
+      <code>$this-&gt;writeStatus($job, 'Processed', 'info')</code>
+      <code>$this-&gt;writeStatus($job, 'Failed', 'error')</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="4">
+      <code>$connection</code>
+      <code>$connection</code>
+      <code>$this-&gt;option('force')</code>
+      <code>$this-&gt;option('stop-when-empty')</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/DatabaseQueue.php">
+    <InvalidArgument occurrences="1">
+      <code>$job</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="1"/>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;retryAfter</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php">
+    <PossiblyNullArrayAccess occurrences="6">
+      <code>$result['Item']['uuid']</code>
+      <code>$result['Item']['connection']</code>
+      <code>$result['Item']['queue']</code>
+      <code>$result['Item']['payload']</code>
+      <code>$result['Item']['exception']</code>
+      <code>$result['Item']['failed_at']</code>
+    </PossiblyNullArrayAccess>
+  </file>
+  <file src="src/Illuminate/Queue/InvalidPayloadException.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>$message ?: json_last_error()</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Queue/Jobs/BeanstalkdJob.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>int</code>
+    </ImplementedReturnTypeMismatch>
+    <NoInterfaceProperties occurrences="1">
+      <code>$stats-&gt;reserves</code>
+    </NoInterfaceProperties>
+  </file>
+  <file src="src/Illuminate/Queue/Jobs/DatabaseJob.php">
+    <InvalidArgument occurrences="1">
+      <code>$this-&gt;job</code>
+    </InvalidArgument>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Queue/Jobs/Job.php">
+    <InvalidArgument occurrences="1">
+      <code>$this</code>
+    </InvalidArgument>
+  </file>
+  <file src="src/Illuminate/Queue/Jobs/RedisJob.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>string|null</code>
+    </ImplementedReturnTypeMismatch>
+  </file>
+  <file src="src/Illuminate/Queue/Listener.php">
+    <FalsableReturnStatement occurrences="1">
+      <code>(new PhpExecutableFinder)-&gt;find(false)</code>
+    </FalsableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Queue/ListenerOptions.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$environment</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Queue/NullQueue.php">
+    <InvalidReturnType occurrences="3">
+      <code>mixed</code>
+      <code>mixed</code>
+      <code>mixed</code>
+    </InvalidReturnType>
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Queue/Queue.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <UndefinedMethod occurrences="3">
+      <code>push</code>
+      <code>later</code>
+      <code>push</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Queue/QueueManager.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;addConnector($driver, $resolver)</code>
+    </InvalidReturnStatement>
+    <UndefinedInterfaceMethod occurrences="10">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>setContainer</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/QueueServiceProvider.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$config</code>
+    </PossiblyInvalidArgument>
+    <UndefinedInterfaceMethod occurrences="5">
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Queue/RedisQueue.php">
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;retryAfter</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$connection</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Queue/SerializesAndRestoresModelIdentifiers.php">
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Collection</code>
+    </InvalidReturnType>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>keyBy</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullArgument occurrences="1">
+      <code>$value-&gt;getQueueableClass()</code>
+    </PossiblyNullArgument>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$collection-&gt;keyBy</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Queue/SqsQueue.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArrayAccess occurrences="1">
+      <code>$attributes['ApproximateNumberOfMessages']</code>
+    </PossiblyNullArrayAccess>
+  </file>
+  <file src="src/Illuminate/Queue/SyncQueue.php">
+    <InvalidArgument occurrences="1">
+      <code>$queueJob</code>
+    </InvalidArgument>
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+    <MismatchingDocblockParamType occurrences="1">
+      <code>\Illuminate\Queue\Jobs\Job</code>
+    </MismatchingDocblockParamType>
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArgument occurrences="2">
+      <code>$queue</code>
+      <code>$queue</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Queue/Worker.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>int</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="4">
+      <code>$this-&gt;runJob($job, $connectionName, $options)</code>
+      <code>$this-&gt;process($connectionName, $job, $options)</code>
+      <code>$this-&gt;raiseAfterJobEvent($connectionName, $job)</code>
+      <code>$job-&gt;fail($e)</code>
+    </InvalidReturnStatement>
+    <InvalidScalarArgument occurrences="2">
+      <code>$seconds * 1000000</code>
+      <code>$seconds</code>
+    </InvalidScalarArgument>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;manager</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Queue\QueueManager</code>
+    </MoreSpecificReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$job &amp;&amp; ! is_null($job-&gt;timeout()) ? $job-&gt;timeout() : $options-&gt;timeout</code>
+    </NullableReturnStatement>
+    <PossiblyNullArgument occurrences="2">
+      <code>$lastRestart</code>
+      <code>$lastRestart</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Redis/Connections/Connection.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;createSubscription($channels, $callback, __FUNCTION__)</code>
+      <code>$this-&gt;createSubscription($channels, $callback, __FUNCTION__)</code>
+    </InvalidReturnStatement>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <UndefinedDocblockClass occurrences="2">
+      <code>\Redis</code>
+      <code>$this-&gt;client</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Redis/Connections/PhpRedisConnection.php">
+    <UndefinedClass occurrences="3">
+      <code>RedisCluster</code>
+      <code>RedisException</code>
+      <code>Redis</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="14">
+      <code>\Redis</code>
+      <code>PhpRedisConnection</code>
+      <code>$this-&gt;client</code>
+      <code>$this-&gt;client</code>
+      <code>$this-&gt;client</code>
+      <code>$this-&gt;client</code>
+      <code>\Redis|array</code>
+      <code>\Redis|array</code>
+      <code>dynamic</code>
+      <code>$this-&gt;client</code>
+      <code>$this-&gt;client</code>
+      <code>\RedisException</code>
+      <code>$this-&gt;client</code>
+      <code>$this-&gt;client</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Redis/Connections/PredisConnection.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;command('flushdb')</code>
+    </InvalidReturnStatement>
+    <PossiblyNullIterator occurrences="1">
+      <code>$loop</code>
+    </PossiblyNullIterator>
+  </file>
+  <file src="src/Illuminate/Redis/Connectors/PhpRedisConnector.php">
+    <InvalidArgument occurrences="1"/>
+    <UndefinedClass occurrences="8">
+      <code>Redis</code>
+      <code>Redis</code>
+      <code>Redis</code>
+      <code>Redis</code>
+      <code>RedisCluster</code>
+      <code>RedisCluster</code>
+      <code>RedisCluster</code>
+      <code>RedisCluster</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="3">
+      <code>\Redis</code>
+      <code>\Redis</code>
+      <code>\RedisCluster</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Redis/Events/CommandExecuted.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="2">
+      <code>$time</code>
+      <code>$connection-&gt;getName()</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Redis/Limiters/ConcurrencyLimiter.php">
+    <PossiblyUndefinedVariable occurrences="2">
+      <code>$slot</code>
+      <code>$slot</code>
+    </PossiblyUndefinedVariable>
+  </file>
+  <file src="src/Illuminate/Routing/AbstractRouteCollection.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Routing\Route</code>
+    </InvalidNullableReturnType>
+    <PossiblyNullArgument occurrences="3">
+      <code>$name</code>
+      <code>$name</code>
+      <code>$route-&gt;getName()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullArrayOffset occurrences="1">
+      <code>$attributes</code>
+    </PossiblyNullArrayOffset>
+  </file>
+  <file src="src/Illuminate/Routing/CompiledRouteCollection.php">
+    <PossiblyNullReference occurrences="7">
+      <code>add</code>
+      <code>match</code>
+      <code>match</code>
+      <code>hasNamedRoute</code>
+      <code>getByName</code>
+      <code>getByAction</code>
+      <code>getRoutes</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Routing/Console/ControllerMakeCommand.php">
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$this-&gt;option('parent')</code>
+      <code>$this-&gt;option('model')</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Routing/ControllerMiddlewareOptions.php">
+    <UndefinedDocblockClass occurrences="2">
+      <code>array|string|dynamic</code>
+      <code>array|string|dynamic</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Routing/ImplicitRouteBinding.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>Reflector::getParameterClassName($parameter)</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/Matching/HostValidator.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>preg_match($hostRegex, $request-&gt;getHost())</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Routing/Matching/UriValidator.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>preg_match($route-&gt;getCompiled()-&gt;getRegex(), rawurldecode($path))</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Routing/Middleware/SubstituteBindings.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$route = $request-&gt;route()</code>
+      <code>$route</code>
+    </ArgumentTypeCoercion>
+    <PossiblyNullArgument occurrences="2">
+      <code>$route = $request-&gt;route()</code>
+      <code>$route</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/Middleware/ThrottleRequests.php">
+    <InvalidScalarArgument occurrences="3">
+      <code>$decayMinutes * 60</code>
+      <code>$maxAttempts</code>
+      <code>$maxAttempts</code>
+    </InvalidScalarArgument>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>getDomain</code>
+    </PossiblyInvalidMethodCall>
+  </file>
+  <file src="src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php">
+    <InvalidArgument occurrences="1">
+      <code>$this-&gt;redis</code>
+    </InvalidArgument>
+    <InvalidScalarArgument occurrences="1">
+      <code>$decayMinutes</code>
+    </InvalidScalarArgument>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>mixed</code>
+    </LessSpecificImplementedReturnType>
+  </file>
+  <file src="src/Illuminate/Routing/PendingResourceRegistration.php">
+    <UndefinedDocblockClass occurrences="2">
+      <code>array|string|dynamic</code>
+      <code>array|string|dynamic</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Routing/RedirectController.php">
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>parameters</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullReference occurrences="1">
+      <code>parameters</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Routing/Redirector.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$expiration</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/ResourceRegistrar.php">
+    <InvalidNullableReturnType occurrences="2">
+      <code>\Illuminate\Routing\RouteCollection</code>
+      <code>array</code>
+    </InvalidNullableReturnType>
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;router-&gt;group(compact('prefix'), $callback)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Routing/ResponseFactory.php">
+    <InvalidArgument occurrences="1">
+      <code>$this-&gt;view-&gt;make($view, $data)</code>
+    </InvalidArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$disposition</code>
+      <code>$disposition</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>first</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Routing/Route.php">
+    <PossiblyFalseOperand occurrences="1">
+      <code>$key</code>
+    </PossiblyFalseOperand>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$this-&gt;middleware()</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="3">
+      <code>$this-&gt;parameters</code>
+      <code>$this-&gt;parameters</code>
+      <code>$expression</code>
+    </PossiblyNullArgument>
+    <PossiblyNullArrayAccess occurrences="1">
+      <code>$this-&gt;parameters[$name]</code>
+    </PossiblyNullArrayAccess>
+  </file>
+  <file src="src/Illuminate/Routing/RouteAction.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$action</code>
+    </ArgumentTypeCoercion>
+    <PossiblyInvalidOperand occurrences="2">
+      <code>$action[0]</code>
+      <code>$action[0]</code>
+    </PossiblyInvalidOperand>
+  </file>
+  <file src="src/Illuminate/Routing/RouteBinding.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$class</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/RouteCollection.php">
+    <PossiblyNullArrayOffset occurrences="1">
+      <code>$this-&gt;nameList</code>
+    </PossiblyNullArrayOffset>
+    <PossiblyUndefinedVariable occurrences="1">
+      <code>$method</code>
+    </PossiblyUndefinedVariable>
+  </file>
+  <file src="src/Illuminate/Routing/RouteDependencyResolverTrait.php">
+    <InvalidScalarArgument occurrences="3">
+      <code>$key</code>
+      <code>$key</code>
+      <code>$offset</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Routing/RouteGroup.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$old</code>
+      <code>$old</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/RouteParameterBinder.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;route-&gt;compiled-&gt;getHostRegex()</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/RouteSignatureParameters.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$class</code>
+      <code>$class</code>
+    </ArgumentTypeCoercion>
+    <InvalidScalarArgument occurrences="1">
+      <code>$method</code>
+    </InvalidScalarArgument>
+    <PossiblyNullArgument occurrences="4">
+      <code>$class</code>
+      <code>$method</code>
+      <code>$class</code>
+      <code>$method</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Routing/RouteUrlGenerator.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+    <InvalidScalarArgument occurrences="1">
+      <code>0</code>
+    </InvalidScalarArgument>
+    <NullableReturnStatement occurrences="1">
+      <code>$route-&gt;getDomain() ? $this-&gt;formatDomain($route, $parameters) : null</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Routing/Router.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$request</code>
+    </ArgumentTypeCoercion>
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\Closure|null</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidNullableReturnType occurrences="1">
+      <code>\Illuminate\Routing\Route</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;current()</code>
+    </NullableReturnStatement>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$callback</code>
+      <code>$binder</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;currentRouteAction()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullReference occurrences="4">
+      <code>parameter</code>
+      <code>getName</code>
+      <code>named</code>
+      <code>getAction</code>
+    </PossiblyNullReference>
+    <UndefinedClass occurrences="1">
+      <code>HttpFoundationFactory</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Routing/RoutingServiceProvider.php">
+    <UndefinedClass occurrences="2">
+      <code>Psr17Factory</code>
+      <code>PsrHttpFactory</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>$this-&gt;app</code>
+      <code>setSessionResolver</code>
+      <code>setKeyResolver</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Routing/UrlGenerator.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$request-&gt;query()</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidCast occurrences="1">
+      <code>$request-&gt;query('signature', '')</code>
+    </PossiblyInvalidCast>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$assetRoot</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Session/Console/SessionTableCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;laravel</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Session/CookieSessionHandler.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>queue</code>
+      <code>queue</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Session/DatabaseSessionHandler.php">
+    <InvalidArgument occurrences="4">
+      <code>$payload</code>
+      <code>$payload</code>
+      <code>$payload</code>
+      <code>$payload</code>
+    </InvalidArgument>
+    <InvalidReturnType occurrences="1">
+      <code>gc</code>
+    </InvalidReturnType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$payload</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$container</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Session/FileSessionHandler.php">
+    <InvalidReturnType occurrences="1">
+      <code>gc</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Session/Middleware/AuthenticateSession.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$request-&gt;cookies-&gt;get($this-&gt;auth-&gt;getRecallerName())</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>viaRemember</code>
+      <code>getRecallerName</code>
+      <code>logoutCurrentDevice</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Session/Middleware/StartSession.php">
+    <PossiblyInvalidMethodCall occurrences="5">
+      <code>locksFor</code>
+      <code>locksFor</code>
+      <code>locksFor</code>
+      <code>waitsFor</code>
+      <code>waitsFor</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullFunctionCall occurrences="1">
+      <code>call_user_func($this-&gt;cacheFactoryResolver)</code>
+    </PossiblyNullFunctionCall>
+    <PossiblyNullReference occurrences="5">
+      <code>locksFor</code>
+      <code>locksFor</code>
+      <code>locksFor</code>
+      <code>waitsFor</code>
+      <code>waitsFor</code>
+    </PossiblyNullReference>
+    <UndefinedDocblockClass occurrences="2">
+      <code>$this-&gt;cache($this-&gt;manager-&gt;blockDriver())</code>
+      <code>\Illuminate\Cache\Store</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Illuminate/Session/SessionManager.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>setConnection</code>
+      <code>$this-&gt;container</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Session/Store.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$id</code>
+    </PossiblyNullArgument>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>setRequest</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Arr.php">
+    <InvalidParamDefault occurrences="1">
+      <code>int</code>
+    </InvalidParamDefault>
+    <InvalidScalarArgument occurrences="2">
+      <code>$key</code>
+      <code>$key</code>
+    </InvalidScalarArgument>
+    <NullArgument occurrences="1">
+      <code>null</code>
+    </NullArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$callback</code>
+    </PossiblyNullArgument>
+    <PossiblyNullFunctionCall occurrences="1">
+      <code>$callback($value, $key)</code>
+    </PossiblyNullFunctionCall>
+  </file>
+  <file src="src/Illuminate/Support/Collection.php">
+    <InvalidArgument occurrences="1">
+      <code>$callback</code>
+    </InvalidArgument>
+    <InvalidCast occurrences="1">
+      <code>$resolvedKey</code>
+    </InvalidCast>
+    <InvalidParamDefault occurrences="1">
+      <code>int</code>
+    </InvalidParamDefault>
+    <InvalidScalarArgument occurrences="2">
+      <code>$start</code>
+      <code>$size</code>
+    </InvalidScalarArgument>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$callback</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyNullArgument occurrences="2">
+      <code>$glue</code>
+      <code>$length</code>
+    </PossiblyNullArgument>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$result-&gt;map</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Support/Composer.php">
+    <PossiblyFalseArgument occurrences="1">
+      <code>(new PhpExecutableFinder)-&gt;find(false)</code>
+    </PossiblyFalseArgument>
+  </file>
+  <file src="src/Illuminate/Support/ConfigurationUrlParser.php">
+    <InvalidScalarArgument occurrences="1">
+      <code>'rawurldecode'</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/Support/DateFactory.php">
+    <UndefinedClass occurrences="2">
+      <code>$dateClass::hasMacro($method)</code>
+      <code>$dateClass::instance($date)</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Support/Env.php">
+    <PossiblyNullArgument occurrences="2">
+      <code>$value</code>
+      <code>$value</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Auth.php">
+    <UndefinedClass occurrences="1">
+      <code>UiServiceProvider</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>getLoadedProviders</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Cookie.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>static::$app</code>
+      <code>static::$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Date.php">
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$name</code>
+    </MoreSpecificImplementedParamType>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>static::$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Facade.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$class ? Mockery::mock($class) : Mockery::mock()</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Mockery\MockInterface</code>
+    </MoreSpecificReturnType>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>static::$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Schema.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>\Illuminate\Database\Schema\Builder</code>
+    </ImplementedReturnTypeMismatch>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>static::$app</code>
+      <code>static::$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Facades/Storage.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>static::$app</code>
+      <code>static::$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/LazyCollection.php">
+    <InvalidCast occurrences="1">
+      <code>$resolvedKey</code>
+    </InvalidCast>
+    <InvalidParamDefault occurrences="1">
+      <code>int</code>
+    </InvalidParamDefault>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$source</code>
+    </PropertyTypeCoercion>
+    <TooManyArguments occurrences="2">
+      <code>$callback($value, $key)</code>
+      <code>$predicate($item, $key)</code>
+    </TooManyArguments>
+    <UndefinedInterfaceMethod occurrences="35">
+      <code>next</code>
+      <code>valid</code>
+      <code>key</code>
+      <code>current</code>
+      <code>valid</code>
+      <code>current</code>
+      <code>valid</code>
+      <code>valid</code>
+      <code>current</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>valid</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>key</code>
+      <code>current</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>current</code>
+      <code>key</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>key</code>
+      <code>current</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>current</code>
+      <code>key</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>next</code>
+      <code>valid</code>
+      <code>key</code>
+      <code>current</code>
+      <code>next</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMagicPropertyFetch occurrences="3">
+      <code>$iterators-&gt;contains</code>
+      <code>$iterators-&gt;map</code>
+      <code>$iterators-&gt;each</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Support/MessageBag.php">
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>\Illuminate\Support\MessageBag</code>
+    </LessSpecificImplementedReturnType>
+    <PossiblyNullArgument occurrences="3">
+      <code>$format</code>
+      <code>$format</code>
+      <code>$format</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Support/Reflector.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$className</code>
+    </ArgumentTypeCoercion>
+    <PossiblyNullReference occurrences="1">
+      <code>getName</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/Illuminate/Support/ServiceProvider.php">
+    <InvalidArgument occurrences="1">
+      <code>$callback</code>
+    </InvalidArgument>
+    <NoInterfaceProperties occurrences="1">
+      <code>$this-&gt;app-&gt;config</code>
+    </NoInterfaceProperties>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Stringable.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$offset</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/BusFake.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;assertDispatchedTimes($command, $callback)</code>
+      <code>$this-&gt;assertDispatchedAfterResponseTimes($command, $callback)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/EventFake.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;assertDispatchedTimes($event, $callback)</code>
+      <code>$this-&gt;dispatch($event, $payload, true)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>void</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/MailFake.php">
+    <InvalidArgument occurrences="2">
+      <code>$view</code>
+      <code>$data</code>
+    </InvalidArgument>
+    <InvalidReturnStatement occurrences="4">
+      <code>$this-&gt;assertSentTimes($mailable, $callback)</code>
+      <code>$this-&gt;assertQueuedTimes($mailable, $callback)</code>
+      <code>$this</code>
+      <code>$this-&gt;queue($view, $data)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>\Illuminate\Mail\Mailer</code>
+      <code>mixed</code>
+    </InvalidReturnType>
+    <MoreSpecificImplementedParamType occurrences="3">
+      <code>$callback</code>
+      <code>$view</code>
+      <code>$view</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$view</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="3">
+      <code>$name</code>
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/NotificationFake.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;assertSentToTimes($notifiable, $notification, $callback)</code>
+      <code>$this-&gt;sendNow($notifiables, $notification)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>mixed</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/PendingMailFake.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>queue</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Support/Testing/Fakes/QueueFake.php">
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;assertPushedTimes($job, $callback)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="4">
+      <code>mixed</code>
+      <code>mixed</code>
+      <code>mixed</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <MoreSpecificImplementedParamType occurrences="4">
+      <code>$job</code>
+      <code>$job</code>
+      <code>$job</code>
+      <code>$job</code>
+    </MoreSpecificImplementedParamType>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$this-&gt;pushed($job, $callback)-&gt;map</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/Support/Traits/EnumeratesValues.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$this-&gt;getIterator()</code>
+    </ArgumentTypeCoercion>
+    <InvalidReturnType occurrences="1">
+      <code>callable</code>
+    </InvalidReturnType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$value</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$key</code>
+      <code>$key</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Support/Traits/Localizable.php">
+    <UndefinedMethod occurrences="3">
+      <code>getLocale</code>
+      <code>setLocale</code>
+      <code>setLocale</code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Support/Traits/Macroable.php">
+    <PossiblyInvalidFunctionCall occurrences="2">
+      <code>call_user_func_array(Closure::bind($macro, null, static::class), $parameters)</code>
+      <code>call_user_func_array($macro-&gt;bindTo($this, static::class), $parameters)</code>
+    </PossiblyInvalidFunctionCall>
+  </file>
+  <file src="src/Illuminate/Support/ViewErrorBag.php">
+    <InvalidCast occurrences="1">
+      <code>$this-&gt;getBag('default')</code>
+    </InvalidCast>
+  </file>
+  <file src="src/Illuminate/Support/helpers.php">
+    <InvalidScalarArgument occurrences="2">
+      <code>$key</code>
+      <code>$key</code>
+    </InvalidScalarArgument>
+    <InvalidThrow occurrences="2">
+      <code>throw (is_string($exception) ? new $exception(...$parameters) : $exception);</code>
+      <code>throw (is_string($exception) ? new $exception(...$parameters) : $exception);</code>
+    </InvalidThrow>
+  </file>
+  <file src="src/Illuminate/Testing/Assert.php">
+    <InternalClass occurrences="2">
+      <code>InvalidArgumentException::create(1, 'array or ArrayAccess')</code>
+      <code>InvalidArgumentException::create(2, 'array or ArrayAccess')</code>
+    </InternalClass>
+    <InternalMethod occurrences="2">
+      <code>InvalidArgumentException::create(1, 'array or ArrayAccess')</code>
+      <code>InvalidArgumentException::create(2, 'array or ArrayAccess')</code>
+    </InternalMethod>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$subset</code>
+    </PossiblyInvalidArgument>
+    <UndefinedClass occurrences="2">
+      <code>InvalidArgumentHelper</code>
+      <code>InvalidArgumentHelper</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Illuminate/Testing/Constraints/ArraySubset.php">
+    <DuplicateClass occurrences="1">
+      <code>ArraySubset</code>
+    </DuplicateClass>
+  </file>
+  <file src="src/Illuminate/Testing/Constraints/CountInDatabase.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$table</code>
+      <code>$table</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Testing/Constraints/HasInDatabase.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$table</code>
+      <code>$table</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Testing/Constraints/SeeInOrder.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$values</code>
+      <code>$values</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Testing/Constraints/SoftDeletedInDatabase.php">
+    <MoreSpecificImplementedParamType occurrences="2">
+      <code>$table</code>
+      <code>$table</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Illuminate/Testing/PendingCommand.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$mock</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Mockery\MockInterface</code>
+    </MoreSpecificReturnType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$answer</code>
+    </PossiblyInvalidArgument>
+    <PossiblyUndefinedMethod occurrences="2">
+      <code>once</code>
+      <code>once</code>
+    </PossiblyUndefinedMethod>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$test</code>
+    </PropertyTypeCoercion>
+    <UndefinedMagicMethod occurrences="2">
+      <code>once</code>
+      <code>once</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="src/Illuminate/Testing/TestResponse.php">
+    <NoValue occurrences="1">
+      <code>return PHPUnit::fail('The response is not a view.');</code>
+    </NoValue>
+    <PossiblyFalseArgument occurrences="8">
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$this-&gt;getContent()</code>
+      <code>$content</code>
+    </PossiblyFalseArgument>
+    <PossiblyUndefinedMethod occurrences="3">
+      <code>to</code>
+      <code>to</code>
+      <code>decrypt</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="src/Illuminate/Translation/Translator.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$line</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Validation/ClosureValidationRule.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>$this-&gt;message</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Validation/Concerns/FormatsMessages.php">
+    <PossiblyNullArgument occurrences="1">
+      <code>$class</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Validation/Concerns/ValidatesAttributes.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>$value</code>
+    </ImplicitToStringCast>
+    <InvalidScalarArgument occurrences="12">
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$column</code>
+      <code>$column</code>
+      <code>$id</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </InvalidScalarArgument>
+    <PossiblyInvalidOperand occurrences="2">
+      <code>$numerator</code>
+      <code>$denominator</code>
+    </PossiblyInvalidOperand>
+    <PossiblyNullArgument occurrences="2">
+      <code>$table</code>
+      <code>$table</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/Validation/Factory.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$container</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Illuminate/Validation/Rules/DatabaseRule.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$column</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/Validation/ValidationData.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>rtrim(explode('*', $attribute)[0], '.') ?: null</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Illuminate/Validation/ValidationRuleParser.php">
+    <InvalidCast occurrences="1">
+      <code>$rule</code>
+    </InvalidCast>
+  </file>
+  <file src="src/Illuminate/Validation/ValidationServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>$app</code>
+      <code>$app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Illuminate/Validation/Validator.php">
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;addFailure($attribute, 'uploaded', [])</code>
+      <code>$this-&gt;excludeAttribute($attribute)</code>
+    </InvalidReturnStatement>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$rule</code>
+      <code>$rule</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$connection</code>
+      <code>$class</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Illuminate/View/Compilers/BladeCompiler.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$this-&gt;aliasInclude($path, $alias)</code>
+    </InvalidReturnStatement>
+    <InvalidScalarArgument occurrences="2">
+      <code>0</code>
+      <code>$replace</code>
+    </InvalidScalarArgument>
+    <PossiblyNullArgument occurrences="4">
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </PossiblyNullArgument>
+    <TypeDoesNotContainType occurrences="1">
+      <code>count($this-&gt;footer) &gt; 0</code>
+    </TypeDoesNotContainType>
+  </file>
+  <file src="src/Illuminate/View/Compilers/ComponentTagCompiler.php">
+    <InvalidDocblock occurrences="1">
+      <code>public function __construct(array $aliases = [], ?BladeCompiler $blade = null)</code>
+    </InvalidDocblock>
+    <InvalidReturnStatement occurrences="1"/>
+    <InvalidReturnType occurrences="1">
+      <code>array</code>
+    </InvalidReturnType>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>collect($constructor-&gt;getParameters())-&gt;map</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Illuminate/View/Compilers/Concerns/CompilesComponents.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>$value</code>
+    </ImplicitToStringCast>
+  </file>
+  <file src="src/Illuminate/View/Compilers/Concerns/CompilesEchos.php">
+    <InvalidScalarArgument occurrences="2">
+      <code>$callback</code>
+      <code>$callback</code>
+    </InvalidScalarArgument>
+  </file>
+  <file src="src/Illuminate/View/Concerns/ManagesComponents.php">
+    <InvalidReturnType occurrences="1">
+      <code>string</code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Illuminate/View/Concerns/ManagesLayouts.php">
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$content instanceof View ? $content : e($content)</code>
+    </PossiblyInvalidArgument>
+  </file>
+  <file src="src/Illuminate/View/View.php">
+    <ImplementedReturnTypeMismatch occurrences="1">
+      <code>array|string</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;render()</code>
+      <code>$this-&gt;render()</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>array</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <InvalidToString occurrences="1">
+      <code>string</code>
+    </InvalidToString>
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Illuminate\Support\MessageBag</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Illuminate/View/ViewServiceProvider.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>$this-&gt;app</code>
+    </UndefinedInterfaceMethod>
+  </file>
+</files>
