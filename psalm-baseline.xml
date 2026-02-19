@@ -645,6 +645,9 @@
       <code><![CDATA[exists]]></code>
       <code><![CDATA[recentlyCreatedToken]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[TokenRepositoryInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[deleteExpired]]></code>
     </PossiblyUnusedMethod>
@@ -2084,6 +2087,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[useStore]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CacheAware]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[$this]]></code>
     </PossiblyUnusedReturnValue>
@@ -2196,6 +2202,9 @@
       <code><![CDATA[exists]]></code>
       <code><![CDATA[forget]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[EventMutex]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Console/Scheduling/ManagesFrequencies.php">
     <InvalidArgument>
@@ -2312,6 +2321,9 @@
       <code><![CDATA[create]]></code>
       <code><![CDATA[exists]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[SchedulingMutex]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[exists]]></code>
     </PossiblyUnusedMethod>
@@ -2517,6 +2529,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[can]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Authorizable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/Access/Gate.php">
     <MissingAbstractPureAnnotation>
@@ -2537,6 +2552,9 @@
       <code><![CDATA[raw]]></code>
       <code><![CDATA[resource]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Gate]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[abilities]]></code>
       <code><![CDATA[after]]></code>
@@ -2561,18 +2579,27 @@
       <code><![CDATA[getRememberTokenName]]></code>
       <code><![CDATA[setRememberToken]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Authenticatable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/CanResetPassword.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[getEmailForPasswordReset]]></code>
       <code><![CDATA[sendPasswordResetNotification]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CanResetPassword]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/Factory.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[guard]]></code>
       <code><![CDATA[shouldUse]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/Guard.php">
     <MissingAbstractPureAnnotation>
@@ -2583,10 +2610,18 @@
       <code><![CDATA[user]]></code>
       <code><![CDATA[validate]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Guard]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[guest]]></code>
       <code><![CDATA[id]]></code>
     </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Illuminate/Contracts/Auth/Middleware/AuthenticatesRequests.php">
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[AuthenticatesRequests]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/MustVerifyEmail.php">
     <MissingAbstractPureAnnotation>
@@ -2595,6 +2630,9 @@
       <code><![CDATA[markEmailAsVerified]]></code>
       <code><![CDATA[sendEmailVerificationNotification]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MustVerifyEmail]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getEmailForVerification]]></code>
       <code><![CDATA[markEmailAsVerified]]></code>
@@ -2605,6 +2643,9 @@
       <code><![CDATA[reset]]></code>
       <code><![CDATA[sendResetLink]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[PasswordBroker]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[reset]]></code>
       <code><![CDATA[sendResetLink]]></code>
@@ -2614,6 +2655,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[broker]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[PasswordBrokerFactory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Auth/StatefulGuard.php">
     <MissingAbstractPureAnnotation>
@@ -2625,6 +2669,9 @@
       <code><![CDATA[onceUsingId]]></code>
       <code><![CDATA[viaRemember]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[StatefulGuard]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[loginUsingId]]></code>
       <code><![CDATA[logout]]></code>
@@ -2637,6 +2684,9 @@
       <code><![CDATA[basic]]></code>
       <code><![CDATA[onceBasic]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[SupportsBasicAuth]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[basic]]></code>
       <code><![CDATA[onceBasic]]></code>
@@ -2650,6 +2700,9 @@
       <code><![CDATA[updateRememberToken]]></code>
       <code><![CDATA[validateCredentials]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[UserProvider]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Broadcasting/Broadcaster.php">
     <MissingAbstractPureAnnotation>
@@ -2657,6 +2710,9 @@
       <code><![CDATA[broadcast]]></code>
       <code><![CDATA[validAuthenticationResponse]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Broadcaster]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[auth]]></code>
       <code><![CDATA[validAuthenticationResponse]]></code>
@@ -2666,6 +2722,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[connection]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[connection]]></code>
     </PossiblyUnusedMethod>
@@ -2674,9 +2733,17 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[broadcastOn]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ShouldBroadcast]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[broadcastOn]]></code>
     </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Illuminate/Contracts/Broadcasting/ShouldBroadcastNow.php">
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ShouldBroadcastNow]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Bus/Dispatcher.php">
     <MissingAbstractPureAnnotation>
@@ -2687,6 +2754,9 @@
       <code><![CDATA[map]]></code>
       <code><![CDATA[pipeThrough]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Dispatcher]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[$this]]></code>
       <code><![CDATA[$this]]></code>
@@ -2696,11 +2766,17 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[dispatchToQueue]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[QueueingDispatcher]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Cache/Factory.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[store]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Cache/Lock.php">
     <MissingAbstractPureAnnotation>
@@ -2710,6 +2786,9 @@
       <code><![CDATA[owner]]></code>
       <code><![CDATA[release]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Lock]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[block]]></code>
       <code><![CDATA[get]]></code>
@@ -2721,6 +2800,9 @@
       <code><![CDATA[lock]]></code>
       <code><![CDATA[restoreLock]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[LockProvider]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[restoreLock]]></code>
     </PossiblyUnusedMethod>
@@ -2739,6 +2821,9 @@
       <code><![CDATA[rememberForever]]></code>
       <code><![CDATA[sear]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Repository]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[pull]]></code>
       <code><![CDATA[remember]]></code>
@@ -2761,6 +2846,9 @@
       <code><![CDATA[put]]></code>
       <code><![CDATA[putMany]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Store]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Config/Repository.php">
     <MissingAbstractPureAnnotation>
@@ -2771,6 +2859,9 @@
       <code><![CDATA[push]]></code>
       <code><![CDATA[set]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Repository]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[all]]></code>
       <code><![CDATA[prepend]]></code>
@@ -2782,6 +2873,9 @@
       <code><![CDATA[call]]></code>
       <code><![CDATA[output]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Application]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Console/Kernel.php">
     <MissingAbstractPureAnnotation>
@@ -2792,6 +2886,9 @@
       <code><![CDATA[queue]]></code>
       <code><![CDATA[terminate]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Kernel]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[all]]></code>
       <code><![CDATA[handle]]></code>
@@ -2825,6 +2922,9 @@
       <code><![CDATA[tagged]]></code>
       <code><![CDATA[when]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Container]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[bindIf]]></code>
       <code><![CDATA[factory]]></code>
@@ -2842,6 +2942,9 @@
       <code><![CDATA[give]]></code>
       <code><![CDATA[needs]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ContextualBindingBuilder]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[needs]]></code>
     </PossiblyUnusedMethod>
@@ -2852,6 +2955,9 @@
       <code><![CDATA[forget]]></code>
       <code><![CDATA[make]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Cookie/QueueingFactory.php">
     <MissingAbstractPureAnnotation>
@@ -2859,6 +2965,9 @@
       <code><![CDATA[queue]]></code>
       <code><![CDATA[unqueue]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[QueueingFactory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[unqueue]]></code>
     </PossiblyUnusedMethod>
@@ -2867,12 +2976,18 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[castUsing]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Castable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Database/Eloquent/CastsAttributes.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[get]]></code>
       <code><![CDATA[set]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CastsAttributes]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[get]]></code>
       <code><![CDATA[set]]></code>
@@ -2882,9 +2997,17 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[set]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CastsInboundAttributes]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[set]]></code>
     </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Illuminate/Contracts/Database/Events/MigrationEvent.php">
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MigrationEvent]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Database/ModelIdentifier.php">
     <MissingImmutableAnnotation>
@@ -2901,6 +3024,9 @@
       <code><![CDATA[report]]></code>
       <code><![CDATA[shouldReport]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ExceptionHandler]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[shouldReport]]></code>
     </PossiblyUnusedMethod>
@@ -2910,6 +3036,9 @@
       <code><![CDATA[decrypt]]></code>
       <code><![CDATA[encrypt]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Encrypter]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Events/Dispatcher.php">
     <MissingAbstractPureAnnotation>
@@ -2923,6 +3052,9 @@
       <code><![CDATA[subscribe]]></code>
       <code><![CDATA[until]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Dispatcher]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[flush]]></code>
       <code><![CDATA[forgetPushed]]></code>
@@ -2933,6 +3065,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[url]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Cloud]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[url]]></code>
     </PossiblyUnusedMethod>
@@ -2941,6 +3076,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[disk]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Filesystem/Filesystem.php">
     <MissingAbstractPureAnnotation>
@@ -2965,6 +3103,9 @@
       <code><![CDATA[size]]></code>
       <code><![CDATA[writeStream]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Filesystem]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[allDirectories]]></code>
       <code><![CDATA[allFiles]]></code>
@@ -3011,6 +3152,9 @@
       <code><![CDATA[terminate]]></code>
       <code><![CDATA[version]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Application]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[setLocale]]></code>
     </PossiblyUnusedMethod>
@@ -3021,12 +3165,18 @@
       <code><![CDATA[getCachedConfigPath]]></code>
       <code><![CDATA[getCachedServicesPath]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CachesConfiguration]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Foundation/CachesRoutes.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[getCachedRoutesPath]]></code>
       <code><![CDATA[routesAreCached]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CachesRoutes]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Hashing/Hasher.php">
     <MissingAbstractPureAnnotation>
@@ -3035,6 +3185,9 @@
       <code><![CDATA[make]]></code>
       <code><![CDATA[needsRehash]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Hasher]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[needsRehash]]></code>
     </PossiblyUnusedMethod>
@@ -3046,6 +3199,9 @@
       <code><![CDATA[handle]]></code>
       <code><![CDATA[terminate]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Kernel]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getApplication]]></code>
       <code><![CDATA[handle]]></code>
@@ -3056,12 +3212,18 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[mailer]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Mail/MailQueue.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[later]]></code>
       <code><![CDATA[queue]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MailQueue]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Mail/Mailable.php">
     <MissingAbstractPureAnnotation>
@@ -3074,6 +3236,9 @@
       <code><![CDATA[send]]></code>
       <code><![CDATA[to]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Mailable]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[$this]]></code>
     </PossiblyUnusedReturnValue>
@@ -3086,6 +3251,9 @@
       <code><![CDATA[send]]></code>
       <code><![CDATA[to]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Mailer]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[bcc]]></code>
       <code><![CDATA[failures]]></code>
@@ -3097,6 +3265,9 @@
       <code><![CDATA[send]]></code>
       <code><![CDATA[sendNow]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Dispatcher]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[send]]></code>
     </PossiblyUnusedMethod>
@@ -3107,6 +3278,9 @@
       <code><![CDATA[send]]></code>
       <code><![CDATA[sendNow]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[channel]]></code>
       <code><![CDATA[send]]></code>
@@ -3118,6 +3292,9 @@
       <code><![CDATA[lastPage]]></code>
       <code><![CDATA[total]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[LengthAwarePaginator]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Pagination/Paginator.php">
     <MissingAbstractPureAnnotation>
@@ -3138,6 +3315,9 @@
       <code><![CDATA[render]]></code>
       <code><![CDATA[url]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Paginator]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[appends]]></code>
       <code><![CDATA[fragment]]></code>
@@ -3151,6 +3331,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[pipe]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Hub]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[pipe]]></code>
     </PossiblyUnusedMethod>
@@ -3161,6 +3344,9 @@
       <code><![CDATA[then]]></code>
       <code><![CDATA[via]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Pipeline]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[via]]></code>
     </PossiblyUnusedMethod>
@@ -3177,6 +3363,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[resolve]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[EntityResolver]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[resolve]]></code>
     </PossiblyUnusedMethod>
@@ -3185,6 +3374,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[connection]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Queue/Job.php">
     <MissingAbstractPureAnnotation>
@@ -3211,6 +3403,9 @@
       <code><![CDATA[timeoutAt]]></code>
       <code><![CDATA[uuid]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Job]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getName]]></code>
       <code><![CDATA[markAsFailed]]></code>
@@ -3222,6 +3417,9 @@
       <code><![CDATA[looping]]></code>
       <code><![CDATA[stopping]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Monitor]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[failing]]></code>
       <code><![CDATA[looping]]></code>
@@ -3241,6 +3439,9 @@
       <code><![CDATA[setConnectionName]]></code>
       <code><![CDATA[size]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Queue]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[bulk]]></code>
       <code><![CDATA[getConnectionName]]></code>
@@ -3254,6 +3455,9 @@
       <code><![CDATA[getQueueableIds]]></code>
       <code><![CDATA[getQueueableRelations]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[QueueableCollection]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Queue/QueueableEntity.php">
     <MissingAbstractPureAnnotation>
@@ -3261,6 +3465,14 @@
       <code><![CDATA[getQueueableId]]></code>
       <code><![CDATA[getQueueableRelations]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[QueueableEntity]]></code>
+    </MissingInterfaceImmutableAnnotation>
+  </file>
+  <file src="src/Illuminate/Contracts/Queue/ShouldQueue.php">
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ShouldQueue]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Redis/Connection.php">
     <MissingAbstractPureAnnotation>
@@ -3268,6 +3480,9 @@
       <code><![CDATA[psubscribe]]></code>
       <code><![CDATA[subscribe]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Connection]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[psubscribe]]></code>
       <code><![CDATA[subscribe]]></code>
@@ -3278,17 +3493,26 @@
       <code><![CDATA[connect]]></code>
       <code><![CDATA[connectToCluster]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Connector]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Redis/Factory.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[connection]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Routing/BindingRegistrar.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[bind]]></code>
       <code><![CDATA[getBindingCallback]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[BindingRegistrar]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Routing/Registrar.php">
     <MissingAbstractPureAnnotation>
@@ -3304,6 +3528,9 @@
       <code><![CDATA[substituteBindings]]></code>
       <code><![CDATA[substituteImplicitBindings]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Registrar]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[options]]></code>
       <code><![CDATA[patch]]></code>
@@ -3330,6 +3557,9 @@
       <code><![CDATA[streamDownload]]></code>
       <code><![CDATA[view]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ResponseFactory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[download]]></code>
       <code><![CDATA[file]]></code>
@@ -3354,6 +3584,9 @@
       <code><![CDATA[setRootControllerNamespace]]></code>
       <code><![CDATA[to]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[UrlGenerator]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[current]]></code>
       <code><![CDATA[secure]]></code>
@@ -3367,6 +3600,9 @@
       <code><![CDATA[resolveChildRouteBinding]]></code>
       <code><![CDATA[resolveRouteBinding]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[UrlRoutable]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[resolveRouteBinding]]></code>
     </PossiblyUnusedMethod>
@@ -3395,6 +3631,9 @@
       <code><![CDATA[start]]></code>
       <code><![CDATA[token]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Session]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[exists]]></code>
       <code><![CDATA[isStarted]]></code>
@@ -3410,11 +3649,17 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[toArray]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Arrayable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/DeferrableProvider.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[provides]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[DeferrableProvider]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[provides]]></code>
     </PossiblyUnusedMethod>
@@ -3423,16 +3668,25 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[resolveDisplayableValue]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[DeferringDisplayableValue]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/Htmlable.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[toHtml]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Htmlable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/Jsonable.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[toJson]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Jsonable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/MessageBag.php">
     <MissingAbstractPureAnnotation>
@@ -3450,6 +3704,9 @@
       <code><![CDATA[merge]]></code>
       <code><![CDATA[setFormat]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MessageBag]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getFormat]]></code>
       <code><![CDATA[isNotEmpty]]></code>
@@ -3462,21 +3719,33 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[getMessageBag]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MessageProvider]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/Renderable.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[render]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Renderable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Support/Responsable.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[toResponse]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Responsable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Translation/HasLocalePreference.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[preferredLocale]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[HasLocalePreference]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Translation/Loader.php">
     <MissingAbstractPureAnnotation>
@@ -3485,6 +3754,9 @@
       <code><![CDATA[load]]></code>
       <code><![CDATA[namespaces]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Loader]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[namespaces]]></code>
     </PossiblyUnusedMethod>
@@ -3496,6 +3768,9 @@
       <code><![CDATA[getLocale]]></code>
       <code><![CDATA[setLocale]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Translator]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[choice]]></code>
     </PossiblyUnusedMethod>
@@ -3507,22 +3782,36 @@
       <code><![CDATA[make]]></code>
       <code><![CDATA[replacer]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[extend]]></code>
       <code><![CDATA[extendImplicit]]></code>
       <code><![CDATA[replacer]]></code>
     </PossiblyUnusedMethod>
   </file>
+  <file src="src/Illuminate/Contracts/Validation/ImplicitRule.php">
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ImplicitRule]]></code>
+    </MissingInterfaceImmutableAnnotation>
+  </file>
   <file src="src/Illuminate/Contracts/Validation/Rule.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[message]]></code>
       <code><![CDATA[passes]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Rule]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/Validation/ValidatesWhenResolved.php">
     <MissingAbstractPureAnnotation>
       <code><![CDATA[validateResolved]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ValidatesWhenResolved]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[validateResolved]]></code>
     </PossiblyUnusedMethod>
@@ -3537,6 +3826,9 @@
       <code><![CDATA[validate]]></code>
       <code><![CDATA[validated]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Validator]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[after]]></code>
       <code><![CDATA[sometimes]]></code>
@@ -3546,6 +3838,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[get]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Engine]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Contracts/View/Factory.php">
     <MissingAbstractPureAnnotation>
@@ -3558,6 +3853,9 @@
       <code><![CDATA[replaceNamespace]]></code>
       <code><![CDATA[share]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Factory]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[creator]]></code>
       <code><![CDATA[file]]></code>
@@ -3573,6 +3871,9 @@
       <code><![CDATA[name]]></code>
       <code><![CDATA[with]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[View]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getData]]></code>
     </PossiblyUnusedMethod>
@@ -3833,6 +4134,9 @@
       <code><![CDATA[unprepared]]></code>
       <code><![CDATA[update]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ConnectionInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[selectOne]]></code>
       <code><![CDATA[transactionLevel]]></code>
@@ -3859,6 +4163,9 @@
       <code><![CDATA[getDefaultConnection]]></code>
       <code><![CDATA[setDefaultConnection]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ConnectionResolverInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Database/Connectors/ConnectionFactory.php">
     <MissingPureAnnotation>
@@ -3898,6 +4205,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[connect]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ConnectorInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Database/Connectors/MySqlConnector.php">
     <InvalidReturnStatement>
@@ -5389,6 +5699,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[apply]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Scope]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Database/Eloquent/SoftDeletingScope.php">
     <MissingOverrideAttribute>
@@ -5593,6 +5906,9 @@
       <code><![CDATA[repositoryExists]]></code>
       <code><![CDATA[setSource]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[MigrationRepositoryInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Database/Migrations/Migrator.php">
     <ArgumentTypeCoercion>
@@ -10051,6 +10367,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[isMissing]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[PotentiallyMissing]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Http/Response.php">
     <FalsableReturnStatement>
@@ -11422,6 +11741,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[connect]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ConnectorInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Connectors/DatabaseConnector.php">
     <ArgumentTypeCoercion>
@@ -11795,6 +12117,9 @@
       <code><![CDATA[forget]]></code>
       <code><![CDATA[log]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[FailedJobProviderInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[all]]></code>
       <code><![CDATA[find]]></code>
@@ -12703,6 +13028,9 @@
       <code><![CDATA[dispatch]]></code>
       <code><![CDATA[getMiddleware]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ControllerDispatcher]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Routing/Controller.php">
     <MissingPureAnnotation>
@@ -12811,6 +13139,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[matches]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ValidatorInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[matches]]></code>
     </PossiblyUnusedMethod>
@@ -13168,6 +13499,9 @@
       <code><![CDATA[refreshActionLookups]]></code>
       <code><![CDATA[refreshNameLookups]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[RouteCollectionInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getRoutesByName]]></code>
       <code><![CDATA[refreshActionLookups]]></code>
@@ -13663,6 +13997,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[setExists]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ExistenceAwareInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[\SessionHandlerInterface]]></code>
     </PossiblyUnusedReturnValue>
@@ -14207,6 +14544,9 @@
       <code><![CDATA[whereStrict]]></code>
       <code><![CDATA[wrap]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Enumerable]]></code>
+    </MissingInterfaceImmutableAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[IteratorAggregate]]></code>
     </MissingTemplateParam>
@@ -16211,6 +16551,9 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[setConnection]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[DatabasePresenceVerifierInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Validation/Factory.php">
     <MissingOverrideAttribute>
@@ -16240,6 +16583,9 @@
       <code><![CDATA[getCount]]></code>
       <code><![CDATA[getMultiCount]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[PresenceVerifierInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Validation/Rule.php">
     <UnusedClass>
@@ -16601,6 +16947,9 @@
       <code><![CDATA[getCompiledPath]]></code>
       <code><![CDATA[isExpired]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[CompilerInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/View/Compilers/ComponentTagCompiler.php">
     <FalsableReturnStatement>
@@ -16608,9 +16957,6 @@
                     ? substr($value, 1, -1)
                     : $value]]></code>
     </FalsableReturnStatement>
-    <InvalidDocblock>
-      <code><![CDATA[public function __construct(array $aliases = [], ?BladeCompiler $blade = null)]]></code>
-    </InvalidDocblock>
     <InvalidNullableReturnType>
       <code><![CDATA[string]]></code>
       <code><![CDATA[string]]></code>
@@ -17293,6 +17639,9 @@
       <code><![CDATA[prependNamespace]]></code>
       <code><![CDATA[replaceNamespace]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[ViewFinderInterface]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="src/Illuminate/View/ViewName.php">
     <MissingImmutableAnnotation>
