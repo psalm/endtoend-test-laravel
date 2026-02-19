@@ -16608,6 +16608,9 @@
                     ? substr($value, 1, -1)
                     : $value]]></code>
     </FalsableReturnStatement>
+    <InvalidDocblock>
+      <code><![CDATA[public function __construct(array $aliases = [], ?BladeCompiler $blade = null)]]></code>
+    </InvalidDocblock>
     <InvalidNullableReturnType>
       <code><![CDATA[string]]></code>
       <code><![CDATA[string]]></code>
