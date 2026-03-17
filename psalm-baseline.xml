@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="dev-master@cf404b51daf81d79198a029f7b2c7f64d28ae68e">
+<files psalm-version="dev-master@fc5f0e168991c4a5a91c3df8a95b80dd181bb293">
   <file src="src/Illuminate/Auth/Access/AuthorizationException.php">
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
