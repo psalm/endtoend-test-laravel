@@ -40,8 +40,12 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[after]]></code>
+      <code><![CDATA[before]]></code>
       <code><![CDATA[guessPolicyNamesUsing]]></code>
+      <code><![CDATA[has]]></code>
       <code><![CDATA[parameterAllowsGuests]]></code>
+      <code><![CDATA[policy]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
       <code><![CDATA[$class]]></code>
@@ -81,6 +85,7 @@
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[__toString]]></code>
       <code><![CDATA[denied]]></code>
+      <code><![CDATA[toArray]]></code>
     </MissingPureAnnotation>
     <PossiblyNullArgument>
       <code><![CDATA[$message]]></code>
@@ -159,6 +164,11 @@
     <ImplementedReturnTypeMismatch>
       <code><![CDATA[string|null]]></code>
     </ImplementedReturnTypeMismatch>
+    <MissingPureAnnotation>
+      <code><![CDATA[getAuthIdentifierName]]></code>
+      <code><![CDATA[getRememberToken]]></code>
+      <code><![CDATA[setRememberToken]]></code>
+    </MissingPureAnnotation>
     <UndefinedThisPropertyFetch>
       <code><![CDATA[$this->password]]></code>
     </UndefinedThisPropertyFetch>
@@ -403,6 +413,9 @@
       <code><![CDATA[__isset]]></code>
       <code><![CDATA[__set]]></code>
       <code><![CDATA[__unset]]></code>
+      <code><![CDATA[getAuthIdentifierName]]></code>
+      <code><![CDATA[getAuthPassword]]></code>
+      <code><![CDATA[getRememberTokenName]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[__get]]></code>
@@ -417,6 +430,7 @@
     <MissingPureAnnotation>
       <code><![CDATA[hasUser]]></code>
       <code><![CDATA[setProvider]]></code>
+      <code><![CDATA[setUser]]></code>
     </MissingPureAnnotation>
     <PossiblyNullReference>
       <code><![CDATA[getAuthIdentifier]]></code>
@@ -633,6 +647,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[PasswordResetServiceProvider]]></code>
     </UnusedClass>
@@ -871,6 +888,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[BroadcastServiceProvider]]></code>
     </UnusedClass>
@@ -911,6 +931,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[auth]]></code>
+      <code><![CDATA[validAuthenticationResponse]]></code>
     </MissingPureAnnotation>
     <PossiblyFalseOperand>
       <code><![CDATA[$payload]]></code>
@@ -926,6 +948,11 @@
       <code><![CDATA[public function broadcast(array $channels, $event, array $payload = [])]]></code>
       <code><![CDATA[public function validAuthenticationResponse($request, $result)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[auth]]></code>
+      <code><![CDATA[broadcast]]></code>
+      <code><![CDATA[validAuthenticationResponse]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php">
     <InvalidReturnStatement>
@@ -1024,6 +1051,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[BusServiceProvider]]></code>
     </UnusedClass>
@@ -1040,6 +1070,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[commandShouldBeQueued]]></code>
+      <code><![CDATA[hasCommandHandler]]></code>
+      <code><![CDATA[map]]></code>
+      <code><![CDATA[pipeThrough]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidMethodCall>
       <code><![CDATA[handle]]></code>
@@ -1143,6 +1176,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[exists]]></code>
+      <code><![CDATA[getCurrentOwner]]></code>
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Cache/ArrayStore.php">
@@ -1160,6 +1194,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[getPrefix]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
       <code><![CDATA[$key]]></code>
@@ -1218,6 +1255,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[CacheServiceProvider]]></code>
     </UnusedClass>
@@ -1245,6 +1285,10 @@
       <code><![CDATA[protected function getArguments()]]></code>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getArguments]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -1358,6 +1402,8 @@
       <code><![CDATA[public function restoreLock($name, $owner)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
       <code><![CDATA[setPrefix]]></code>
       <code><![CDATA[type]]></code>
     </MissingPureAnnotation>
@@ -1376,6 +1422,9 @@
     </PossiblyNullArrayAccess>
   </file>
   <file src="src/Illuminate/Cache/Events/CacheEvent.php">
+    <MissingImmutableAnnotation>
+      <code><![CDATA[CacheEvent]]></code>
+    </MissingImmutableAnnotation>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[setTags]]></code>
@@ -1416,6 +1465,7 @@
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[emptyPayload]]></code>
+      <code><![CDATA[getPrefix]]></code>
       <code><![CDATA[path]]></code>
     </MissingPureAnnotation>
     <PossiblyFalseArgument>
@@ -1445,6 +1495,7 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[acquire]]></code>
       <code><![CDATA[getCurrentOwner]]></code>
+      <code><![CDATA[release]]></code>
     </MissingAbstractPureAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[abstract public function release();]]></code>
@@ -1508,6 +1559,11 @@
       <code><![CDATA[public function forceRelease()]]></code>
       <code><![CDATA[public function release()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[acquire]]></code>
+      <code><![CDATA[forceRelease]]></code>
+      <code><![CDATA[getCurrentOwner]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedParam>
       <code><![CDATA[$memcached]]></code>
       <code><![CDATA[$name]]></code>
@@ -1545,6 +1601,12 @@
       <code><![CDATA[public function restoreLock($name, $owner)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[decrement]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[increment]]></code>
+      <code><![CDATA[many]]></code>
       <code><![CDATA[setPrefix]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
@@ -1597,6 +1659,16 @@
       <code><![CDATA[public function increment($key, $value = 1)]]></code>
       <code><![CDATA[public function put($key, $value, $seconds)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[decrement]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forever]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[getPrefix]]></code>
+      <code><![CDATA[increment]]></code>
+      <code><![CDATA[put]]></code>
+    </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$key]]></code>
     </MoreSpecificImplementedParamType>
@@ -1624,6 +1696,11 @@
       <code><![CDATA[public function forceRelease()]]></code>
       <code><![CDATA[public function release()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[acquire]]></code>
+      <code><![CDATA[forceRelease]]></code>
+      <code><![CDATA[getCurrentOwner]]></code>
+    </MissingPureAnnotation>
     <UndefinedMagicMethod>
       <code><![CDATA[del]]></code>
       <code><![CDATA[eval]]></code>
@@ -2043,6 +2120,7 @@
       <code><![CDATA[protected function getArguments()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getArguments]]></code>
       <code><![CDATA[getDefaultNamespace]]></code>
       <code><![CDATA[getNamespace]]></code>
       <code><![CDATA[isReservedName]]></code>
@@ -2103,6 +2181,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[useStore]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2116,6 +2195,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[useStore]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2134,6 +2214,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[getSummaryForDisplay]]></code>
+      <code><![CDATA[mutexName]]></code>
+      <code><![CDATA[onOneServer]]></code>
     </MissingPureAnnotation>
     <RedundantPropertyInitializationCheck>
       <code><![CDATA[isset($this->description)]]></code>
@@ -2412,9 +2495,11 @@
       <code><![CDATA[public function when($concrete)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[alias]]></code>
       <code><![CDATA[dropStaleInstances]]></code>
       <code><![CDATA[findInContextualBindings]]></code>
       <code><![CDATA[fireCallbackArray]]></code>
+      <code><![CDATA[flush]]></code>
       <code><![CDATA[forgetInstance]]></code>
       <code><![CDATA[forgetInstances]]></code>
       <code><![CDATA[getAlias]]></code>
@@ -2429,9 +2514,11 @@
       <code><![CDATA[isBuildable]]></code>
       <code><![CDATA[isShared]]></code>
       <code><![CDATA[notInstantiable]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[parseBindMethod]]></code>
       <code><![CDATA[removeAbstractAlias]]></code>
       <code><![CDATA[setInstance]]></code>
+      <code><![CDATA[tag]]></code>
       <code><![CDATA[unresolvablePrimitive]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
@@ -2487,6 +2574,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[needs]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
       <code><![CDATA[$implementation]]></code>
@@ -3894,6 +3982,7 @@
     <MissingPureAnnotation>
       <code><![CDATA[getPathAndDomain]]></code>
       <code><![CDATA[setDefaultPathAndDomain]]></code>
+      <code><![CDATA[unqueue]]></code>
     </MissingPureAnnotation>
     <NullArgument>
       <code><![CDATA[null]]></code>
@@ -4005,6 +4094,9 @@
     <InvalidReturnType>
       <code><![CDATA[void]]></code>
     </InvalidReturnType>
+    <MissingPureAnnotation>
+      <code><![CDATA[transactionLevel]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Database/ConfigurationUrlParser.php">
     <UnusedClass>
@@ -4151,7 +4243,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[addConnection]]></code>
+      <code><![CDATA[connection]]></code>
       <code><![CDATA[hasConnection]]></code>
+      <code><![CDATA[setDefaultConnection]]></code>
     </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[ConnectionResolver]]></code>
@@ -4264,6 +4358,9 @@
       <code><![CDATA[protected function getPath($name)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4287,6 +4384,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4298,6 +4398,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4341,6 +4444,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4352,6 +4458,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4373,6 +4482,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4393,6 +4505,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4425,6 +4540,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4442,6 +4560,9 @@
       <code><![CDATA[protected function qualifyClass($name)]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[qualifyClass]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -4454,6 +4575,7 @@
       <code><![CDATA[dropAllTables]]></code>
       <code><![CDATA[dropAllTypes]]></code>
       <code><![CDATA[dropAllViews]]></code>
+      <code><![CDATA[getOptions]]></code>
     </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
@@ -4475,6 +4597,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[extend]]></code>
+      <code><![CDATA[getDefaultConnection]]></code>
+      <code><![CDATA[setDefaultConnection]]></code>
       <code><![CDATA[setReconnector]]></code>
       <code><![CDATA[supportedDrivers]]></code>
     </MissingPureAnnotation>
@@ -4681,6 +4805,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[append]]></code>
+      <code><![CDATA[duplicateComparator]]></code>
       <code><![CDATA[makeHidden]]></code>
       <code><![CDATA[makeVisible]]></code>
       <code><![CDATA[modelKeys]]></code>
@@ -4997,6 +5122,8 @@
       <code><![CDATA[afterCreating]]></code>
       <code><![CDATA[afterMaking]]></code>
       <code><![CDATA[define]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[raw]]></code>
       <code><![CDATA[state]]></code>
     </MissingPureAnnotation>
@@ -5104,10 +5231,13 @@
       <code><![CDATA[callNamedScope]]></code>
       <code><![CDATA[clearBootedModels]]></code>
       <code><![CDATA[getConnectionResolver]]></code>
+      <code><![CDATA[getQueueableConnection]]></code>
+      <code><![CDATA[getRouteKeyName]]></code>
       <code><![CDATA[hasNamedScope]]></code>
       <code><![CDATA[isIgnoringTouch]]></code>
       <code><![CDATA[loadMorph]]></code>
       <code><![CDATA[loadMorphCount]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[setConnection]]></code>
       <code><![CDATA[setConnectionResolver]]></code>
       <code><![CDATA[setIncrementing]]></code>
@@ -5197,12 +5327,12 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Database/Eloquent/QueueEntityResolver.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[QueueEntityResolver]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function resolve($type, $id)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[resolve]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Database/Eloquent/RelationNotFoundException.php">
     <PossiblyUnusedProperty>
@@ -5356,6 +5486,7 @@
     <MissingPureAnnotation>
       <code><![CDATA[getOtherKey]]></code>
       <code><![CDATA[setPivotKeys]]></code>
+      <code><![CDATA[unsetRelations]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$ids]]></code>
@@ -5616,8 +5747,10 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[gatherKeysByType]]></code>
+      <code><![CDATA[match]]></code>
       <code><![CDATA[morphWith]]></code>
       <code><![CDATA[morphWithCount]]></code>
+      <code><![CDATA[newRelatedInstanceFor]]></code>
       <code><![CDATA[replayMacros]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
@@ -5735,9 +5868,6 @@
     </PossiblyUnusedProperty>
   </file>
   <file src="src/Illuminate/Database/Events/MigrationEvent.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[MigrationEvent]]></code>
-    </MissingImmutableAnnotation>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
     </MissingPureAnnotation>
@@ -5745,16 +5875,6 @@
       <code><![CDATA[$method]]></code>
       <code><![CDATA[$migration]]></code>
     </PossiblyUnusedProperty>
-  </file>
-  <file src="src/Illuminate/Database/Events/MigrationsEnded.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[MigrationsEnded]]></code>
-    </MissingImmutableAnnotation>
-  </file>
-  <file src="src/Illuminate/Database/Events/MigrationsStarted.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[MigrationsStarted]]></code>
-    </MissingImmutableAnnotation>
   </file>
   <file src="src/Illuminate/Database/Events/NoPendingMigrations.php">
     <MissingImmutableAnnotation>
@@ -5832,6 +5952,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[registerMigrateCommand]]></code>
       <code><![CDATA[registerMigrateFreshCommand]]></code>
@@ -5861,6 +5984,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[setSource]]></code>
     </MissingPureAnnotation>
     <MoreSpecificReturnType>
       <code><![CDATA[\Illuminate\Database\Connection]]></code>
@@ -5965,6 +6089,7 @@
       <code><![CDATA[public function getSchemaBuilder()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getDefaultPostProcessor]]></code>
       <code><![CDATA[getDoctrineDriver]]></code>
     </MissingPureAnnotation>
     <MoreSpecificReturnType>
@@ -5988,6 +6113,7 @@
       <code><![CDATA[public function getSchemaBuilder()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getDefaultPostProcessor]]></code>
       <code><![CDATA[getDoctrineDriver]]></code>
     </MissingPureAnnotation>
     <MoreSpecificReturnType>
@@ -6311,6 +6437,11 @@
       <code><![CDATA[public function compileRandom($seed)]]></code>
       <code><![CDATA[public function prepareBindingsForUpdate(array $bindings, array $values)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[compileLock]]></code>
+      <code><![CDATA[compileRandom]]></code>
+      <code><![CDATA[wrapValue]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Database/Query/Grammars/PostgresGrammar.php">
     <MissingOverrideAttribute>
@@ -6334,6 +6465,8 @@
       <code><![CDATA[public function prepareBindingsForUpdate(array $bindings, array $values)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[compileLock]]></code>
+      <code><![CDATA[wrapJsonBooleanValue]]></code>
       <code><![CDATA[wrapJsonPathAttributes]]></code>
     </MissingPureAnnotation>
     <PossiblyFalseArgument>
@@ -6360,6 +6493,10 @@
       <code><![CDATA[public function compileUpdate(Builder $query, array $values)]]></code>
       <code><![CDATA[public function prepareBindingsForUpdate(array $bindings, array $values)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[compileLock]]></code>
+      <code><![CDATA[wrapUnion]]></code>
+    </MissingPureAnnotation>
     <PossiblyFalseArgument>
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
@@ -6396,9 +6533,19 @@
       <code><![CDATA[public function wrapTable($table)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[compileLimit]]></code>
+      <code><![CDATA[compileLock]]></code>
+      <code><![CDATA[compileOffset]]></code>
       <code><![CDATA[compileOver]]></code>
+      <code><![CDATA[compileRandom]]></code>
       <code><![CDATA[compileRowConstraint]]></code>
+      <code><![CDATA[compileSavepoint]]></code>
+      <code><![CDATA[compileSavepointRollBack]]></code>
+      <code><![CDATA[getDateFormat]]></code>
+      <code><![CDATA[prepareBindingForJsonContains]]></code>
+      <code><![CDATA[wrapJsonBooleanValue]]></code>
       <code><![CDATA[wrapTableValuedFunction]]></code>
+      <code><![CDATA[wrapValue]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
       <code><![CDATA[$table]]></code>
@@ -6426,12 +6573,19 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function processColumnListing($results)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[processColumnListing]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Database/Query/Processors/PostgresProcessor.php">
     <MissingOverrideAttribute>
       <code><![CDATA[public function processColumnListing($results)]]></code>
       <code><![CDATA[public function processInsertGetId(Builder $query, $sql, $values, $sequence = null)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[processColumnListing]]></code>
+      <code><![CDATA[processInsertGetId]]></code>
+    </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
       <code><![CDATA[recordsHaveBeenModified]]></code>
       <code><![CDATA[selectFromWriteConnection]]></code>
@@ -6453,6 +6607,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function processColumnListing($results)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[processColumnListing]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Database/Query/Processors/SqlServerProcessor.php">
     <ArgumentTypeCoercion>
@@ -6462,6 +6619,9 @@
       <code><![CDATA[public function processColumnListing($results)]]></code>
       <code><![CDATA[public function processInsertGetId(Builder $query, $sql, $values, $sequence = null)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[processColumnListing]]></code>
+    </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
       <code><![CDATA[getConfig]]></code>
       <code><![CDATA[getPdo]]></code>
@@ -6485,6 +6645,7 @@
       <code><![CDATA[public function getSchemaBuilder()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getDefaultPostProcessor]]></code>
       <code><![CDATA[getDoctrineDriver]]></code>
     </MissingPureAnnotation>
     <MoreSpecificReturnType>
@@ -6727,6 +6888,7 @@
       <code><![CDATA[typeBigInteger]]></code>
       <code><![CDATA[typeBinary]]></code>
       <code><![CDATA[typeBoolean]]></code>
+      <code><![CDATA[typeComputed]]></code>
       <code><![CDATA[typeDate]]></code>
       <code><![CDATA[typeGeometry]]></code>
       <code><![CDATA[typeGeometryCollection]]></code>
@@ -6749,6 +6911,7 @@
       <code><![CDATA[typeTinyInteger]]></code>
       <code><![CDATA[typeUuid]]></code>
       <code><![CDATA[typeYear]]></code>
+      <code><![CDATA[wrapValue]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[compileAdd]]></code>
@@ -7117,6 +7280,7 @@
       <code><![CDATA[compileDropSpatialIndex]]></code>
       <code><![CDATA[compileEnableForeignKeyConstraints]]></code>
       <code><![CDATA[compileEnableWriteableSchema]]></code>
+      <code><![CDATA[compileForeign]]></code>
       <code><![CDATA[compileRebuild]]></code>
       <code><![CDATA[compileSpatialIndex]]></code>
       <code><![CDATA[compileTableExists]]></code>
@@ -7596,6 +7760,7 @@
       <code><![CDATA[public function transaction(Closure $callback, $attempts = 1)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getDefaultPostProcessor]]></code>
       <code><![CDATA[getDoctrineDriver]]></code>
     </MissingPureAnnotation>
     <MoreSpecificReturnType>
@@ -7721,6 +7886,15 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[dispatch]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[forgetPushed]]></code>
+      <code><![CDATA[hasListeners]]></code>
+      <code><![CDATA[listen]]></code>
+      <code><![CDATA[push]]></code>
+      <code><![CDATA[subscribe]]></code>
+      <code><![CDATA[until]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[__call]]></code>
@@ -7881,6 +8055,7 @@
       <code><![CDATA[parseVisibility]]></code>
       <code><![CDATA[path]]></code>
       <code><![CDATA[temporaryUrl]]></code>
+      <code><![CDATA[url]]></code>
     </MissingPureAnnotation>
     <PossiblyFalseArgument>
       <code><![CDATA[$stream]]></code>
@@ -8085,6 +8260,11 @@
       <code><![CDATA[abort]]></code>
       <code><![CDATA[addAbsoluteCachePathPrefix]]></code>
       <code><![CDATA[addDeferredServices]]></code>
+      <code><![CDATA[basePath]]></code>
+      <code><![CDATA[booting]]></code>
+      <code><![CDATA[bootstrapPath]]></code>
+      <code><![CDATA[configPath]]></code>
+      <code><![CDATA[databasePath]]></code>
       <code><![CDATA[environmentFile]]></code>
       <code><![CDATA[environmentPath]]></code>
       <code><![CDATA[isDeferredService]]></code>
@@ -8092,9 +8272,13 @@
       <code><![CDATA[markAsRegistered]]></code>
       <code><![CDATA[path]]></code>
       <code><![CDATA[publicPath]]></code>
+      <code><![CDATA[resolveProvider]]></code>
+      <code><![CDATA[resourcePath]]></code>
       <code><![CDATA[setDeferredServices]]></code>
+      <code><![CDATA[storagePath]]></code>
       <code><![CDATA[terminating]]></code>
       <code><![CDATA[useEnvironmentPath]]></code>
+      <code><![CDATA[version]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$bootstrappers]]></code>
@@ -8295,6 +8479,10 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getStub]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8305,6 +8493,10 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getStub]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8346,6 +8538,11 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+      <code><![CDATA[getStub]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8386,6 +8583,11 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[protected function replaceClass($stub, $name)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getArguments]]></code>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8472,6 +8674,10 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getStub]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8483,6 +8689,10 @@
       <code><![CDATA[protected function getOptions()]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8493,6 +8703,10 @@
       <code><![CDATA[protected function getOptions()]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8579,6 +8793,10 @@
       <code><![CDATA[protected function getOptions()]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8602,6 +8820,10 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8625,6 +8847,9 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8643,6 +8868,10 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8664,6 +8893,10 @@
       <code><![CDATA[protected function getOptions()]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8706,6 +8939,10 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[protected function userProviderModel()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8727,6 +8964,10 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getStub]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8745,6 +8986,9 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8756,6 +9000,10 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[public function handle()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8803,6 +9051,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function getOptions()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8843,6 +9094,9 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -8891,6 +9145,9 @@
       <code><![CDATA[protected function getStub()]]></code>
       <code><![CDATA[protected function rootNamespace()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[rootNamespace]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -9151,6 +9408,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function transform($key, $value)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[transform]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[ConvertEmptyStringsToNull]]></code>
     </UnusedClass>
@@ -9167,6 +9427,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected function transform($key, $value)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[transform]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[TrimStrings]]></code>
     </UnusedClass>
@@ -9265,6 +9528,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[registerCacheClearCommand]]></code>
       <code><![CDATA[registerCacheForgetCommand]]></code>
@@ -9337,6 +9603,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php">
     <UnusedClass>
@@ -9347,6 +9616,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[register]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[boot]]></code>
     </PossiblyUnusedMethod>
@@ -9487,6 +9759,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[report]]></code>
+      <code><![CDATA[shouldReport]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[handleValidationExceptions]]></code>
@@ -9737,6 +10011,9 @@
       <code><![CDATA[protected function algorithm()]]></code>
       <code><![CDATA[public function check($value, $hashedValue, array $options = [])]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[algorithm]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Hashing/ArgonHasher.php">
     <InvalidReturnStatement>
@@ -9804,6 +10081,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[HashServiceProvider]]></code>
     </UnusedClass>
@@ -9912,6 +10192,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[withData]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
@@ -9945,6 +10227,8 @@
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[cookies]]></code>
       <code><![CDATA[effectiveUri]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[ArrayAccess]]></code>
@@ -10187,6 +10471,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[getRouteResolver]]></code>
+      <code><![CDATA[getSession]]></code>
       <code><![CDATA[getUserResolver]]></code>
       <code><![CDATA[instance]]></code>
       <code><![CDATA[setJson]]></code>
@@ -10256,6 +10541,14 @@
       <code><![CDATA[__get]]></code>
       <code><![CDATA[__isset]]></code>
       <code><![CDATA[__unset]]></code>
+      <code><![CDATA[getRouteKey]]></code>
+      <code><![CDATA[getRouteKeyName]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetGet]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
+      <code><![CDATA[resolveChildRouteBinding]]></code>
+      <code><![CDATA[resolveRouteBinding]]></code>
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Http/Resources/Json/JsonResource.php">
@@ -10356,12 +10649,12 @@
     </UndefinedMagicMethod>
   </file>
   <file src="src/Illuminate/Http/Resources/MissingValue.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[MissingValue]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function isMissing()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[isMissing]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Http/Resources/PotentiallyMissing.php">
     <MissingAbstractPureAnnotation>
@@ -10428,6 +10721,7 @@
       <code><![CDATA[public function getSize()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[getSize]]></code>
       <code><![CDATA[mimeType]]></code>
       <code><![CDATA[size]]></code>
       <code><![CDATA[tempFilePath]]></code>
@@ -10676,6 +10970,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[MailServiceProvider]]></code>
     </UnusedClass>
@@ -10727,6 +11024,8 @@
       <code><![CDATA[addressesToArray]]></code>
       <code><![CDATA[buildViewDataUsing]]></code>
       <code><![CDATA[html]]></code>
+      <code><![CDATA[locale]]></code>
+      <code><![CDATA[mailer]]></code>
       <code><![CDATA[markdown]]></code>
       <code><![CDATA[normalizeRecipient]]></code>
       <code><![CDATA[priority]]></code>
@@ -11026,6 +11325,13 @@
       <code><![CDATA[public function start()]]></code>
       <code><![CDATA[public function stop()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[isStarted]]></code>
+      <code><![CDATA[ping]]></code>
+      <code><![CDATA[registerPlugin]]></code>
+      <code><![CDATA[start]]></code>
+      <code><![CDATA[stop]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Notifications/Action.php">
     <MissingImmutableAnnotation>
@@ -11438,6 +11744,7 @@
       <code><![CDATA[setCollection]]></code>
       <code><![CDATA[setPageName]]></code>
       <code><![CDATA[setPath]]></code>
+      <code><![CDATA[toHtml]]></code>
       <code><![CDATA[viewFactoryResolver]]></code>
     </MissingPureAnnotation>
     <NullableReturnStatement>
@@ -11517,6 +11824,9 @@
       <code><![CDATA[public function toJson($options = 0)]]></code>
       <code><![CDATA[public function total()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[hasMorePages]]></code>
+    </MissingPureAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[ArrayAccess]]></code>
       <code><![CDATA[IteratorAggregate]]></code>
@@ -11569,6 +11879,7 @@
       <code><![CDATA[public function toJson($options = 0)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[hasMorePages]]></code>
       <code><![CDATA[hasMorePagesWhen]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
@@ -11621,6 +11932,9 @@
       <code><![CDATA[handleCarry]]></code>
       <code><![CDATA[handleException]]></code>
       <code><![CDATA[parsePipeString]]></code>
+      <code><![CDATA[send]]></code>
+      <code><![CDATA[through]]></code>
+      <code><![CDATA[via]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$passable]]></code>
@@ -11641,6 +11955,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[PipelineServiceProvider]]></code>
     </UnusedClass>
@@ -11757,12 +12074,12 @@
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Connectors/NullConnector.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[NullConnector]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function connect(array $config)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[connect]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Connectors/RedisConnector.php">
     <MissingOverrideAttribute>
@@ -11784,12 +12101,12 @@
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Connectors/SyncConnector.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[SyncConnector]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function connect(array $config)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[connect]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Console/FailedTableCommand.php">
     <NonInvariantDocblockPropertyType>
@@ -12093,6 +12410,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
     </MissingPureAnnotation>
     <PossiblyNullArrayAccess>
       <code><![CDATA[$result['Item']['connection']]]></code>
@@ -12129,9 +12448,6 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Queue/Failed/NullFailedJobProvider.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[NullFailedJobProvider]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function all()]]></code>
       <code><![CDATA[public function find($id)]]></code>
@@ -12139,6 +12455,13 @@
       <code><![CDATA[public function forget($id)]]></code>
       <code><![CDATA[public function log($connection, $queue, $payload, $exception)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[all]]></code>
+      <code><![CDATA[find]]></code>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[log]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/InteractsWithQueue.php">
     <MissingPureAnnotation>
@@ -12181,6 +12504,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[getJobId]]></code>
+      <code><![CDATA[getRawBody]]></code>
     </MissingPureAnnotation>
     <NoInterfaceProperties>
       <code><![CDATA[$stats->reserves]]></code>
@@ -12208,6 +12533,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[attempts]]></code>
+      <code><![CDATA[getJobId]]></code>
+      <code><![CDATA[getRawBody]]></code>
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Queue/Jobs/DatabaseJobRecord.php">
@@ -12268,6 +12596,10 @@
       <code><![CDATA[public function getRawBody()]]></code>
       <code><![CDATA[public function release($delay = 0)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[attempts]]></code>
+      <code><![CDATA[getJobId]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getRedisQueue]]></code>
     </PossiblyUnusedMethod>
@@ -12282,6 +12614,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[attempts]]></code>
+      <code><![CDATA[getJobId]]></code>
+      <code><![CDATA[getRawBody]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getSqs]]></code>
@@ -12298,6 +12633,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[attempts]]></code>
+      <code><![CDATA[getJobId]]></code>
+      <code><![CDATA[getQueue]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedProperty>
       <code><![CDATA[$job]]></code>
@@ -12357,6 +12695,13 @@
       <code><![CDATA[public function pushRaw($payload, $queue = null, array $options = [])]]></code>
       <code><![CDATA[public function size($queue = null)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[later]]></code>
+      <code><![CDATA[pop]]></code>
+      <code><![CDATA[push]]></code>
+      <code><![CDATA[pushRaw]]></code>
+      <code><![CDATA[size]]></code>
+    </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$job]]></code>
       <code><![CDATA[$job]]></code>
@@ -12409,10 +12754,13 @@
       <code><![CDATA[after]]></code>
       <code><![CDATA[before]]></code>
       <code><![CDATA[exceptionOccurred]]></code>
+      <code><![CDATA[failing]]></code>
       <code><![CDATA[getConfig]]></code>
       <code><![CDATA[getConnector]]></code>
       <code><![CDATA[getDefaultDriver]]></code>
+      <code><![CDATA[looping]]></code>
       <code><![CDATA[setDefaultDriver]]></code>
+      <code><![CDATA[stopping]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[__call]]></code>
@@ -12444,6 +12792,7 @@
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
       <code><![CDATA[registerConnectors]]></code>
     </MissingPureAnnotation>
     <PossiblyFalseArgument>
@@ -12571,6 +12920,11 @@
       <code><![CDATA[public function pushRaw($payload, $queue = null, array $options = [])]]></code>
       <code><![CDATA[public function size($queue = null)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[pop]]></code>
+      <code><![CDATA[pushRaw]]></code>
+      <code><![CDATA[size]]></code>
+    </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$job]]></code>
       <code><![CDATA[$job]]></code>
@@ -12700,6 +13054,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[applyPrefix]]></code>
+      <code><![CDATA[createSubscription]]></code>
       <code><![CDATA[disconnect]]></code>
       <code><![CDATA[flushdb]]></code>
       <code><![CDATA[hscan]]></code>
@@ -12933,6 +13288,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[RedisServiceProvider]]></code>
     </UnusedClass>
@@ -12976,6 +13334,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[refreshActionLookups]]></code>
+      <code><![CDATA[refreshNameLookups]]></code>
       <code><![CDATA[setContainer]]></code>
       <code><![CDATA[setRouter]]></code>
     </MissingPureAnnotation>
@@ -13002,6 +13362,10 @@
       <code><![CDATA[protected function getOptions()]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+      <code><![CDATA[getOptions]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -13019,6 +13383,9 @@
       <code><![CDATA[protected function getDefaultNamespace($rootNamespace)]]></code>
       <code><![CDATA[protected function getStub()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getDefaultNamespace]]></code>
+    </MissingPureAnnotation>
     <NonInvariantDocblockPropertyType>
       <code><![CDATA[$description]]></code>
     </NonInvariantDocblockPropertyType>
@@ -13202,6 +13569,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[calculateRemainingAttempts]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
       <code><![CDATA[$decayMinutes]]></code>
@@ -13474,6 +13842,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[addToActionList]]></code>
+      <code><![CDATA[getByAction]]></code>
+      <code><![CDATA[getByName]]></code>
+      <code><![CDATA[getRoutes]]></code>
     </MissingPureAnnotation>
     <PossiblyNullArrayOffset>
       <code><![CDATA[$this->nameList]]></code>
@@ -13662,6 +14033,7 @@
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[aliasMiddleware]]></code>
+      <code><![CDATA[getBindingCallback]]></code>
       <code><![CDATA[getCurrentRoute]]></code>
       <code><![CDATA[hasGroupStack]]></code>
       <code><![CDATA[hasMiddlewareGroup]]></code>
@@ -13772,6 +14144,7 @@
       <code><![CDATA[isValidUrl]]></code>
       <code><![CDATA[pathFormatter]]></code>
       <code><![CDATA[setKeyResolver]]></code>
+      <code><![CDATA[setRootControllerNamespace]]></code>
       <code><![CDATA[setRoutes]]></code>
       <code><![CDATA[setSessionResolver]]></code>
     </MissingPureAnnotation>
@@ -13830,6 +14203,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[destroy]]></code>
+      <code><![CDATA[open]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$lifetime]]></code>
@@ -13861,6 +14237,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[gc]]></code>
+      <code><![CDATA[open]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$lifetime]]></code>
@@ -13906,6 +14285,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[gc]]></code>
+      <code><![CDATA[open]]></code>
       <code><![CDATA[setRequest]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
@@ -13957,6 +14339,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[open]]></code>
+      <code><![CDATA[setExists]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$lifetime]]></code>
@@ -14018,6 +14403,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[open]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$lifetime]]></code>
@@ -14094,9 +14481,6 @@
     <InvalidReturnType>
       <code><![CDATA[gc]]></code>
     </InvalidReturnType>
-    <MissingImmutableAnnotation>
-      <code><![CDATA[NullSessionHandler]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function close()]]></code>
       <code><![CDATA[public function destroy($sessionId)]]></code>
@@ -14105,6 +14489,14 @@
       <code><![CDATA[public function read($sessionId)]]></code>
       <code><![CDATA[public function write($sessionId, $data)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[close]]></code>
+      <code><![CDATA[destroy]]></code>
+      <code><![CDATA[gc]]></code>
+      <code><![CDATA[open]]></code>
+      <code><![CDATA[read]]></code>
+      <code><![CDATA[write]]></code>
+    </MissingPureAnnotation>
     <ParamNameMismatch>
       <code><![CDATA[$lifetime]]></code>
       <code><![CDATA[$savePath]]></code>
@@ -14173,6 +14565,8 @@
       <code><![CDATA[public function token()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[handlerNeedsRequest]]></code>
       <code><![CDATA[isValidId]]></code>
       <code><![CDATA[prepareForStorage]]></code>
       <code><![CDATA[prepareForUnserialize]]></code>
@@ -14345,7 +14739,13 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[add]]></code>
+      <code><![CDATA[count]]></code>
       <code><![CDATA[duplicateComparator]]></code>
+      <code><![CDATA[isEmpty]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetGet]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[pop]]></code>
       <code><![CDATA[push]]></code>
       <code><![CDATA[shift]]></code>
@@ -14621,6 +15021,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[App]]></code>
     </UnusedClass>
@@ -14629,6 +15032,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Artisan]]></code>
     </UnusedClass>
@@ -14637,6 +15043,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[routes]]></code>
     </PossiblyUnusedMethod>
@@ -14651,6 +15060,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Blade]]></code>
     </UnusedClass>
@@ -14659,11 +15071,17 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Bus.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Bus]]></code>
     </UnusedClass>
@@ -14672,11 +15090,17 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Config.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Cookie.php">
     <MissingOverrideAttribute>
@@ -14684,6 +15108,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[get]]></code>
+      <code><![CDATA[getFacadeAccessor]]></code>
       <code><![CDATA[has]]></code>
     </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
@@ -14698,6 +15123,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Crypt]]></code>
     </UnusedClass>
@@ -14706,6 +15134,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[DB]]></code>
     </UnusedClass>
@@ -14715,6 +15146,9 @@
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
       <code><![CDATA[protected static function resolveFacadeInstance($name)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$name]]></code>
     </MoreSpecificImplementedParamType>
@@ -14726,6 +15160,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[fakeFor]]></code>
     </PossiblyUnusedMethod>
@@ -14767,6 +15204,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[File]]></code>
     </UnusedClass>
@@ -14775,16 +15215,25 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Hash.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Http.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Http]]></code>
     </UnusedClass>
@@ -14793,11 +15242,17 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Log.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Log]]></code>
     </UnusedClass>
@@ -14806,6 +15261,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Mail]]></code>
     </UnusedClass>
@@ -14814,6 +15272,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Notification]]></code>
     </UnusedClass>
@@ -14822,6 +15283,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Password]]></code>
     </UnusedClass>
@@ -14830,6 +15294,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Queue]]></code>
     </UnusedClass>
@@ -14838,16 +15305,25 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Redis.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Request.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Request]]></code>
     </UnusedClass>
@@ -14856,6 +15332,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Response]]></code>
     </UnusedClass>
@@ -14864,6 +15343,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Route]]></code>
     </UnusedClass>
@@ -14877,6 +15359,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[connection]]></code>
+      <code><![CDATA[getFacadeAccessor]]></code>
     </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
       <code><![CDATA[static::$app]]></code>
@@ -14890,6 +15373,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[Session]]></code>
     </UnusedClass>
@@ -14898,6 +15384,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
       <code><![CDATA[static::$app]]></code>
       <code><![CDATA[static::$app]]></code>
@@ -14924,16 +15413,25 @@
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/Validator.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Facades/View.php">
     <MissingOverrideAttribute>
       <code><![CDATA[protected static function getFacadeAccessor()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[getFacadeAccessor]]></code>
+    </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Support/Fluent.php">
     <FalsableReturnStatement>
@@ -14950,6 +15448,10 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__call]]></code>
+      <code><![CDATA[jsonSerialize]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[ArrayAccess]]></code>
@@ -14992,9 +15494,6 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Support/HtmlString.php">
-    <MissingImmutableAnnotation>
-      <code><![CDATA[HtmlString]]></code>
-    </MissingImmutableAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function toHtml()]]></code>
     </MissingOverrideAttribute>
@@ -15190,7 +15689,12 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[checkFormat]]></code>
+      <code><![CDATA[count]]></code>
+      <code><![CDATA[getMessageBag]]></code>
+      <code><![CDATA[getMessages]]></code>
       <code><![CDATA[isUnique]]></code>
+      <code><![CDATA[keys]]></code>
+      <code><![CDATA[setFormat]]></code>
     </MissingPureAnnotation>
     <PossiblyNullArgument>
       <code><![CDATA[$format]]></code>
@@ -15479,7 +15983,11 @@
       <code><![CDATA[public function until($event, $payload = [])]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[flush]]></code>
+      <code><![CDATA[forget]]></code>
+      <code><![CDATA[forgetPushed]]></code>
       <code><![CDATA[hasDispatched]]></code>
+      <code><![CDATA[push]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[assertDispatched]]></code>
@@ -15514,6 +16022,11 @@
       <code><![CDATA[public function send($view, array $data = [], $callback = null)]]></code>
       <code><![CDATA[public function to($users)]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[failures]]></code>
+      <code><![CDATA[mailer]]></code>
+      <code><![CDATA[raw]]></code>
+    </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$callback]]></code>
       <code><![CDATA[$view]]></code>
@@ -15554,6 +16067,7 @@
       <code><![CDATA[public function sendNow($notifiables, $notification, array $channels = null)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[channel]]></code>
       <code><![CDATA[locale]]></code>
       <code><![CDATA[notificationsFor]]></code>
     </MissingPureAnnotation>
@@ -15616,7 +16130,14 @@
       <code><![CDATA[public function size($queue = null)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[__call]]></code>
+      <code><![CDATA[connection]]></code>
+      <code><![CDATA[getConnectionName]]></code>
       <code><![CDATA[hasPushed]]></code>
+      <code><![CDATA[pop]]></code>
+      <code><![CDATA[push]]></code>
+      <code><![CDATA[pushRaw]]></code>
+      <code><![CDATA[setConnectionName]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$job]]></code>
@@ -15667,7 +16188,10 @@
       <code><![CDATA[void]]></code>
     </InvalidReturnType>
     <MissingPureAnnotation>
+      <code><![CDATA[dd]]></code>
       <code><![CDATA[equality]]></code>
+      <code><![CDATA[proxy]]></code>
+      <code><![CDATA[unwrap]]></code>
       <code><![CDATA[useAsCallable]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
@@ -15925,6 +16449,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[failureDescription]]></code>
+      <code><![CDATA[toString]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$table]]></code>
@@ -15946,6 +16472,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[toString]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$table]]></code>
@@ -15974,6 +16501,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[failureDescription]]></code>
+      <code><![CDATA[matches]]></code>
+      <code><![CDATA[toString]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$values]]></code>
@@ -15995,6 +16525,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[toString]]></code>
     </MissingPureAnnotation>
     <MoreSpecificImplementedParamType>
       <code><![CDATA[$table]]></code>
@@ -16065,6 +16596,8 @@
       <code><![CDATA[__get]]></code>
       <code><![CDATA[__isset]]></code>
       <code><![CDATA[jsonSearchStrings]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[responseHasView]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
@@ -16156,7 +16689,11 @@
       <code><![CDATA[public function namespaces()]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[addJsonPath]]></code>
       <code><![CDATA[addMessages]]></code>
+      <code><![CDATA[addNamespace]]></code>
+      <code><![CDATA[load]]></code>
+      <code><![CDATA[namespaces]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[addMessages]]></code>
@@ -16171,6 +16708,8 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[addJsonPath]]></code>
+      <code><![CDATA[addNamespace]]></code>
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Translation/MessageSelector.php">
@@ -16186,6 +16725,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UnusedClass>
       <code><![CDATA[TranslationServiceProvider]]></code>
     </UnusedClass>
@@ -16255,6 +16797,9 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[getError]]></code>
+      <code><![CDATA[getWarnings]]></code>
+      <code><![CDATA[isValid]]></code>
     </MissingPureAnnotation>
     <RedundantCondition>
       <code><![CDATA[filter_var($email, FILTER_VALIDATE_EMAIL, $this->flags) !== false]]></code>
@@ -16545,6 +17090,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[setConnection]]></code>
     </MissingPureAnnotation>
   </file>
   <file src="src/Illuminate/Validation/DatabasePresenceVerifierInterface.php">
@@ -16564,6 +17110,7 @@
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
+      <code><![CDATA[replacer]]></code>
       <code><![CDATA[resolver]]></code>
       <code><![CDATA[setPresenceVerifier]]></code>
     </MissingPureAnnotation>
@@ -16614,6 +17161,9 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Validation/Rules/Dimensions.php">
+    <MissingImmutableAnnotation>
+      <code><![CDATA[Dimensions]]></code>
+    </MissingImmutableAnnotation>
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[__toString]]></code>
@@ -16743,6 +17293,9 @@
       <code><![CDATA[public function provides()]]></code>
       <code><![CDATA[public function register()]]></code>
     </MissingOverrideAttribute>
+    <MissingPureAnnotation>
+      <code><![CDATA[provides]]></code>
+    </MissingPureAnnotation>
     <UndefinedInterfaceMethod>
       <code><![CDATA[$app]]></code>
       <code><![CDATA[$app]]></code>
@@ -16957,6 +17510,9 @@
                     ? substr($value, 1, -1)
                     : $value]]></code>
     </FalsableReturnStatement>
+    <InvalidDocblock>
+      <code><![CDATA[public function __construct(array $aliases = [], ?BladeCompiler $blade = null)]]></code>
+    </InvalidDocblock>
     <InvalidNullableReturnType>
       <code><![CDATA[string]]></code>
       <code><![CDATA[string]]></code>
@@ -17308,7 +17864,11 @@
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[__toString]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetSet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[setAttributes]]></code>
+      <code><![CDATA[toHtml]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[ArrayAccess]]></code>
@@ -17440,6 +18000,9 @@
     </UnusedClass>
   </file>
   <file src="src/Illuminate/View/Engines/EngineResolver.php">
+    <MissingImmutableAnnotation>
+      <code><![CDATA[EngineResolver]]></code>
+    </MissingImmutableAnnotation>
     <MissingPureAnnotation>
       <code><![CDATA[register]]></code>
       <code><![CDATA[resolve]]></code>
@@ -17487,6 +18050,7 @@
       <code><![CDATA[setContainer]]></code>
       <code><![CDATA[setDispatcher]]></code>
       <code><![CDATA[setFinder]]></code>
+      <code><![CDATA[share]]></code>
     </MissingPureAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[addExtension]]></code>
@@ -17525,9 +18089,14 @@
       <code><![CDATA[public function replaceNamespace($namespace, $hints)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
+      <code><![CDATA[addExtension]]></code>
+      <code><![CDATA[addNamespace]]></code>
+      <code><![CDATA[flush]]></code>
       <code><![CDATA[getPossibleViewFiles]]></code>
       <code><![CDATA[hasHintInformation]]></code>
       <code><![CDATA[parseNamespaceSegments]]></code>
+      <code><![CDATA[prependNamespace]]></code>
+      <code><![CDATA[replaceNamespace]]></code>
       <code><![CDATA[setPaths]]></code>
     </MissingPureAnnotation>
     <ParamNameMismatch>
@@ -17606,7 +18175,12 @@
       <code><![CDATA[__get]]></code>
       <code><![CDATA[__isset]]></code>
       <code><![CDATA[__unset]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[offsetExists]]></code>
+      <code><![CDATA[offsetGet]]></code>
+      <code><![CDATA[offsetUnset]]></code>
       <code><![CDATA[setPath]]></code>
+      <code><![CDATA[with]]></code>
     </MissingPureAnnotation>
     <MissingTemplateParam>
       <code><![CDATA[ArrayAccess]]></code>
