@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="dev-master@fc5f0e168991c4a5a91c3df8a95b80dd181bb293">
+<files psalm-version="dev-master@79a720277b363cf9a640a35f8e280bd126646126">
   <file src="src/Illuminate/Auth/Access/AuthorizationException.php">
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
@@ -1849,10 +1849,6 @@
       <code><![CDATA[setDefaultCacheTime]]></code>
       <code><![CDATA[tags]]></code>
     </PossiblyUnusedMethod>
-    <PossiblyUnusedReturnValue>
-      <code><![CDATA[int|bool]]></code>
-      <code><![CDATA[int|bool]]></code>
-    </PossiblyUnusedReturnValue>
     <RedundantPropertyInitializationCheck>
       <code><![CDATA[isset($this->events)]]></code>
     </RedundantPropertyInitializationCheck>
@@ -2557,7 +2553,6 @@
       <code><![CDATA[wrap]]></code>
     </PossiblyUnusedMethod>
     <PossiblyUnusedReturnValue>
-      <code><![CDATA[\Illuminate\Contracts\Container\Container|static]]></code>
       <code><![CDATA[mixed]]></code>
     </PossiblyUnusedReturnValue>
     <PropertyTypeCoercion>
@@ -2917,9 +2912,6 @@
       <code><![CDATA[remember]]></code>
       <code><![CDATA[sear]]></code>
     </PossiblyUnusedMethod>
-    <PossiblyUnusedReturnValue>
-      <code><![CDATA[int|bool]]></code>
-    </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Illuminate/Contracts/Cache/Store.php">
     <MissingAbstractPureAnnotation>
@@ -2984,9 +2976,6 @@
       <code><![CDATA[queue]]></code>
       <code><![CDATA[terminate]]></code>
     </PossiblyUnusedMethod>
-    <PossiblyUnusedReturnValue>
-      <code><![CDATA[int]]></code>
-    </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Illuminate/Contracts/Container/Container.php">
     <MissingAbstractPureAnnotation>
@@ -6281,7 +6270,6 @@
       <code><![CDATA[whereNotExists]]></code>
     </PossiblyUnusedMethod>
     <PossiblyUnusedReturnValue>
-      <code><![CDATA[$this]]></code>
       <code><![CDATA[$this]]></code>
       <code><![CDATA[$this]]></code>
       <code><![CDATA[$this]]></code>
@@ -13036,15 +13024,19 @@
       <code><![CDATA[isset($this->events)]]></code>
       <code><![CDATA[isset($this->events)]]></code>
     </RedundantPropertyInitializationCheck>
-    <UndefinedDocblockClass>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[\Redis]]></code>
-    </UndefinedDocblockClass>
   </file>
   <file src="src/Illuminate/Redis/Connections/PhpRedisConnection.php">
-    <InvalidThrow>
-      <code><![CDATA[throw $e]]></code>
-    </InvalidThrow>
+    <InvalidArgument>
+      <code><![CDATA[function ($redis, $channel, $message) use ($callback) {
+            $callback($message, $channel);
+        }]]></code>
+      <code><![CDATA[function ($redis, $pattern, $channel, $message) use ($callback) {
+            $callback($message, $channel);
+        }]]></code>
+    </InvalidArgument>
+    <InvalidReturnStatement>
+      <code><![CDATA[$this->command('flushdb')]]></code>
+    </InvalidReturnStatement>
     <MissingOverrideAttribute>
       <code><![CDATA[public function __call($method, $parameters)]]></code>
       <code><![CDATA[public function command($method, array $parameters = [])]]></code>
@@ -13053,14 +13045,8 @@
       <code><![CDATA[public function subscribe($channels, Closure $callback)]]></code>
     </MissingOverrideAttribute>
     <MissingPureAnnotation>
-      <code><![CDATA[applyPrefix]]></code>
+      <code><![CDATA[__construct]]></code>
       <code><![CDATA[createSubscription]]></code>
-      <code><![CDATA[disconnect]]></code>
-      <code><![CDATA[flushdb]]></code>
-      <code><![CDATA[hscan]]></code>
-      <code><![CDATA[scan]]></code>
-      <code><![CDATA[sscan]]></code>
-      <code><![CDATA[zscan]]></code>
     </MissingPureAnnotation>
     <PossiblyNullIterator>
       <code><![CDATA[array_pop($dictionary)]]></code>
@@ -13099,40 +13085,18 @@
     </PossiblyUnusedMethod>
     <PossiblyUnusedParam>
       <code><![CDATA[$arguments]]></code>
-      <code><![CDATA[$client]]></code>
-      <code><![CDATA[$config]]></code>
-      <code><![CDATA[$connector]]></code>
       <code><![CDATA[$numberOfKeys]]></code>
       <code><![CDATA[$script]]></code>
     </PossiblyUnusedParam>
-    <PossiblyUnusedProperty>
-      <code><![CDATA[$config]]></code>
-    </PossiblyUnusedProperty>
-    <UndefinedClass>
-      <code><![CDATA[$e]]></code>
-      <code><![CDATA[Redis]]></code>
-      <code><![CDATA[RedisCluster]]></code>
-      <code><![CDATA[RedisException]]></code>
-    </UndefinedClass>
+    <RedundantCondition>
+      <code><![CDATA[[$cursor, $result]]]></code>
+    </RedundantCondition>
+    <TypeDoesNotContainType>
+      <code><![CDATA[$result === false]]></code>
+    </TypeDoesNotContainType>
     <UndefinedDocblockClass>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[$this->client]]></code>
-      <code><![CDATA[PhpRedisConnection]]></code>
-      <code><![CDATA[\Redis]]></code>
-      <code><![CDATA[\RedisException]]></code>
-      <code><![CDATA[\Redis|array]]></code>
-      <code><![CDATA[\Redis|array]]></code>
       <code><![CDATA[dynamic]]></code>
     </UndefinedDocblockClass>
-    <UndefinedMagicMethod>
-      <code><![CDATA[script]]></code>
-    </UndefinedMagicMethod>
   </file>
   <file src="src/Illuminate/Redis/Connections/PredisConnection.php">
     <InvalidReturnStatement>
@@ -13167,26 +13131,12 @@
     </MissingOverrideAttribute>
     <PossiblyFalseArgument>
       <code><![CDATA[phpversion('redis')]]></code>
+      <code><![CDATA[phpversion('redis')]]></code>
     </PossiblyFalseArgument>
-    <PossiblyUnusedParam>
-      <code><![CDATA[$client]]></code>
-      <code><![CDATA[$config]]></code>
-    </PossiblyUnusedParam>
-    <UndefinedClass>
-      <code><![CDATA[Redis]]></code>
-      <code><![CDATA[Redis]]></code>
-      <code><![CDATA[Redis]]></code>
-      <code><![CDATA[Redis]]></code>
-      <code><![CDATA[RedisCluster]]></code>
-      <code><![CDATA[RedisCluster]]></code>
-      <code><![CDATA[RedisCluster]]></code>
-      <code><![CDATA[RedisCluster]]></code>
-    </UndefinedClass>
-    <UndefinedDocblockClass>
-      <code><![CDATA[\Redis]]></code>
-      <code><![CDATA[\Redis]]></code>
-      <code><![CDATA[\RedisCluster]]></code>
-    </UndefinedDocblockClass>
+    <UndefinedConstant>
+      <code><![CDATA[RedisCluster::OPT_PREFIX]]></code>
+      <code><![CDATA[RedisCluster::OPT_SCAN]]></code>
+    </UndefinedConstant>
   </file>
   <file src="src/Illuminate/Redis/Connectors/PredisConnector.php">
     <MissingOverrideAttribute>
@@ -14776,7 +14726,6 @@
     <PossiblyUnusedReturnValue>
       <code><![CDATA[mixed]]></code>
       <code><![CDATA[static]]></code>
-      <code><![CDATA[static]]></code>
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Illuminate/Support/Composer.php">
@@ -14999,9 +14948,6 @@
       <code><![CDATA[whereNotBetween]]></code>
       <code><![CDATA[whereNotInStrict]]></code>
     </PossiblyUnusedMethod>
-    <PossiblyUnusedReturnValue>
-      <code><![CDATA[$this]]></code>
-    </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Illuminate/Support/Env.php">
     <MissingPureAnnotation>
@@ -15166,9 +15112,6 @@
     <PossiblyUnusedMethod>
       <code><![CDATA[fakeFor]]></code>
     </PossiblyUnusedMethod>
-    <PossiblyUnusedReturnValue>
-      <code><![CDATA[\Illuminate\Support\Testing\Fakes\EventFake]]></code>
-    </PossiblyUnusedReturnValue>
     <UndefinedMagicMethod>
       <code><![CDATA[Cache::refreshEventDispatcher()]]></code>
       <code><![CDATA[Cache::refreshEventDispatcher()]]></code>
