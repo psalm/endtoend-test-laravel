@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="dev-master@fba1673ef75388d8c011e539b37d172d4dc9813a">
+<files psalm-version="dev-master@7a2d7840acbe75e6081224aed33e8a68034b1061">
   <file src="src/Illuminate/Auth/Access/AuthorizationException.php">
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
@@ -1937,6 +1937,11 @@
       <code><![CDATA[isset($this->events)]]></code>
     </RedundantPropertyInitializationCheck>
   </file>
+  <file src="src/Illuminate/Cache/RetrievesMultipleKeys.php">
+    <MissingPureAnnotation>
+      <code><![CDATA[putMany]]></code>
+    </MissingPureAnnotation>
+  </file>
   <file src="src/Illuminate/Cache/TagSet.php">
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
@@ -3398,8 +3403,6 @@
     </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[forever]]></code>
-      <code><![CDATA[forget]]></code>
-      <code><![CDATA[make]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Contracts/Cookie/QueueingFactory.php">
@@ -3817,8 +3820,6 @@
     </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[getUrlRange]]></code>
-      <code><![CDATA[lastPage]]></code>
-      <code><![CDATA[total]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Contracts/Pagination/Paginator.php">
@@ -3845,21 +3846,12 @@
     </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
       <code><![CDATA[appends]]></code>
-      <code><![CDATA[currentPage]]></code>
-      <code><![CDATA[firstItem]]></code>
       <code><![CDATA[fragment]]></code>
-      <code><![CDATA[hasMorePages]]></code>
       <code><![CDATA[hasPages]]></code>
       <code><![CDATA[isEmpty]]></code>
       <code><![CDATA[isNotEmpty]]></code>
       <code><![CDATA[items]]></code>
-      <code><![CDATA[lastItem]]></code>
-      <code><![CDATA[nextPageUrl]]></code>
-      <code><![CDATA[path]]></code>
-      <code><![CDATA[perPage]]></code>
-      <code><![CDATA[previousPageUrl]]></code>
       <code><![CDATA[render]]></code>
-      <code><![CDATA[url]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Contracts/Pipeline/Hub.php">
@@ -4326,7 +4318,6 @@
     <PossiblyUnusedMethod>
       <code><![CDATA[add]]></code>
       <code><![CDATA[all]]></code>
-      <code><![CDATA[count]]></code>
       <code><![CDATA[first]]></code>
       <code><![CDATA[get]]></code>
       <code><![CDATA[getFormat]]></code>
@@ -4559,17 +4550,12 @@
       <code><![CDATA[$this->sameSite]]></code>
     </PossiblyNullPropertyAssignmentValue>
     <PossiblyUnusedMethod>
-      <code><![CDATA[getPathAndDomain]]></code>
       <code><![CDATA[hasQueued]]></code>
       <code><![CDATA[queued]]></code>
       <code><![CDATA[setDefaultPathAndDomain]]></code>
     </PossiblyUnusedMethod>
     <PossiblyUnusedProperty>
-      <code><![CDATA[$domain]]></code>
-      <code><![CDATA[$path]]></code>
       <code><![CDATA[$queued]]></code>
-      <code><![CDATA[$sameSite]]></code>
-      <code><![CDATA[$secure]]></code>
     </PossiblyUnusedProperty>
     <UndefinedMethod>
       <code><![CDATA[$this->queued[$cookie->getName()]]]></code>
@@ -4836,21 +4822,16 @@
       <code><![CDATA[ConnectionInterface]]></code>
     </MissingInterfaceImmutableAnnotation>
     <PossiblyUnusedMethod>
-      <code><![CDATA[affectingStatement]]></code>
       <code><![CDATA[beginTransaction]]></code>
       <code><![CDATA[commit]]></code>
       <code><![CDATA[cursor]]></code>
-      <code><![CDATA[delete]]></code>
-      <code><![CDATA[insert]]></code>
       <code><![CDATA[pretend]]></code>
       <code><![CDATA[raw]]></code>
       <code><![CDATA[rollBack]]></code>
       <code><![CDATA[selectOne]]></code>
-      <code><![CDATA[table]]></code>
       <code><![CDATA[transaction]]></code>
       <code><![CDATA[transactionLevel]]></code>
       <code><![CDATA[unprepared]]></code>
-      <code><![CDATA[update]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Database/ConnectionResolver.php">
@@ -6924,8 +6905,6 @@
     </PossiblyUndefinedArrayOffset>
     <PossiblyUnusedMethod>
       <code><![CDATA[getTablePrefix]]></code>
-      <code><![CDATA[parameter]]></code>
-      <code><![CDATA[parameterize]]></code>
       <code><![CDATA[quoteString]]></code>
       <code><![CDATA[wrapArray]]></code>
     </PossiblyUnusedMethod>
@@ -7305,19 +7284,14 @@
       <code><![CDATA[addDateBasedWhere]]></code>
       <code><![CDATA[addDynamic]]></code>
       <code><![CDATA[addWhereExistsQuery]]></code>
-      <code><![CDATA[aggregate]]></code>
       <code><![CDATA[average]]></code>
       <code><![CDATA[avg]]></code>
       <code><![CDATA[cloneForPaginationCount]]></code>
-      <code><![CDATA[cloneWithout]]></code>
-      <code><![CDATA[cloneWithoutBindings]]></code>
-      <code><![CDATA[count]]></code>
       <code><![CDATA[crossJoin]]></code>
       <code><![CDATA[cursor]]></code>
       <code><![CDATA[dd]]></code>
       <code><![CDATA[decrement]]></code>
       <code><![CDATA[defaultKeyName]]></code>
-      <code><![CDATA[delete]]></code>
       <code><![CDATA[distinct]]></code>
       <code><![CDATA[doesntExist]]></code>
       <code><![CDATA[doesntExistOr]]></code>
@@ -7326,7 +7300,6 @@
       <code><![CDATA[enforceOrderBy]]></code>
       <code><![CDATA[exists]]></code>
       <code><![CDATA[existsOr]]></code>
-      <code><![CDATA[find]]></code>
       <code><![CDATA[forPage]]></code>
       <code><![CDATA[forPageAfterId]]></code>
       <code><![CDATA[forPageBeforeId]]></code>
@@ -7339,7 +7312,6 @@
       <code><![CDATA[implode]]></code>
       <code><![CDATA[inRandomOrder]]></code>
       <code><![CDATA[increment]]></code>
-      <code><![CDATA[insert]]></code>
       <code><![CDATA[insertGetId]]></code>
       <code><![CDATA[insertOrIgnore]]></code>
       <code><![CDATA[insertUsing]]></code>
@@ -7395,7 +7367,6 @@
       <code><![CDATA[rightJoinSub]]></code>
       <code><![CDATA[rightJoinWhere]]></code>
       <code><![CDATA[runPaginationCountQuery]]></code>
-      <code><![CDATA[setAggregate]]></code>
       <code><![CDATA[sharedLock]]></code>
       <code><![CDATA[simplePaginate]]></code>
       <code><![CDATA[skip]]></code>
@@ -7404,7 +7375,6 @@
       <code><![CDATA[truncate]]></code>
       <code><![CDATA[union]]></code>
       <code><![CDATA[unionAll]]></code>
-      <code><![CDATA[update]]></code>
       <code><![CDATA[updateOrInsert]]></code>
       <code><![CDATA[value]]></code>
       <code><![CDATA[whereBetween]]></code>
@@ -7427,11 +7397,12 @@
       <code><![CDATA[withoutSelectAliases]]></code>
     </PossiblyUnusedMethod>
     <PossiblyUnusedProperty>
-      <code><![CDATA[$groups]]></code>
       <code><![CDATA[$havings]]></code>
       <code><![CDATA[$lock]]></code>
-      <code><![CDATA[$orders]]></code>
     </PossiblyUnusedProperty>
+    <PossiblyUnusedReturnValue>
+      <code><![CDATA[int]]></code>
+    </PossiblyUnusedReturnValue>
     <UndefinedInterfaceMethod>
       <code><![CDATA[getPostProcessor]]></code>
       <code><![CDATA[getQueryGrammar]]></code>
@@ -7515,20 +7486,15 @@
     <PossiblyUnusedMethod>
       <code><![CDATA[compileBasicHaving]]></code>
       <code><![CDATA[compileColumns]]></code>
-      <code><![CDATA[compileDelete]]></code>
-      <code><![CDATA[compileDeleteWithJoins]]></code>
-      <code><![CDATA[compileDeleteWithoutJoins]]></code>
       <code><![CDATA[compileExists]]></code>
       <code><![CDATA[compileFrom]]></code>
       <code><![CDATA[compileGroups]]></code>
       <code><![CDATA[compileHaving]]></code>
       <code><![CDATA[compileHavingBetween]]></code>
       <code><![CDATA[compileHavings]]></code>
-      <code><![CDATA[compileInsert]]></code>
       <code><![CDATA[compileInsertGetId]]></code>
       <code><![CDATA[compileInsertOrIgnore]]></code>
       <code><![CDATA[compileInsertUsing]]></code>
-      <code><![CDATA[compileJoins]]></code>
       <code><![CDATA[compileJsonContains]]></code>
       <code><![CDATA[compileJsonLength]]></code>
       <code><![CDATA[compileLock]]></code>
@@ -7536,18 +7502,8 @@
       <code><![CDATA[compileSavepoint]]></code>
       <code><![CDATA[compileSavepointRollBack]]></code>
       <code><![CDATA[compileTruncate]]></code>
-      <code><![CDATA[compileUpdate]]></code>
-      <code><![CDATA[compileUpdateColumns]]></code>
-      <code><![CDATA[compileUpdateWithJoins]]></code>
-      <code><![CDATA[compileUpdateWithoutJoins]]></code>
-      <code><![CDATA[compileWheres]]></code>
-      <code><![CDATA[compileWheresToArray]]></code>
-      <code><![CDATA[concatenateWhereClauses]]></code>
       <code><![CDATA[dateBasedWhere]]></code>
       <code><![CDATA[prepareBindingForJsonContains]]></code>
-      <code><![CDATA[prepareBindingsForDelete]]></code>
-      <code><![CDATA[prepareBindingsForUpdate]]></code>
-      <code><![CDATA[removeLeadingBoolean]]></code>
       <code><![CDATA[supportsSavepoints]]></code>
       <code><![CDATA[whereBasic]]></code>
       <code><![CDATA[whereBetween]]></code>
@@ -7632,9 +7588,6 @@
       <code><![CDATA[compileRandom]]></code>
       <code><![CDATA[wrapValue]]></code>
     </MissingPureAnnotation>
-    <PossiblyUnusedMethod>
-      <code><![CDATA[compileJsonUpdateColumn]]></code>
-    </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Database/Query/Grammars/PostgresGrammar.php">
     <MissingOverrideAttribute>
@@ -7666,11 +7619,6 @@
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
     </PossiblyFalseArgument>
-    <PossiblyUnusedMethod>
-      <code><![CDATA[compileDeleteWithJoinsOrLimit]]></code>
-      <code><![CDATA[compileJsonUpdateColumn]]></code>
-      <code><![CDATA[compileUpdateWithJoinsOrLimit]]></code>
-    </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php">
     <MissingOverrideAttribute>
@@ -7699,12 +7647,6 @@
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
       <code><![CDATA[preg_split('/\s+as\s+/i', $query->from)]]></code>
     </PossiblyFalseArgument>
-    <PossiblyUnusedMethod>
-      <code><![CDATA[compileDeleteWithJoinsOrLimit]]></code>
-      <code><![CDATA[compileJsonPatch]]></code>
-      <code><![CDATA[compileUpdateWithJoinsOrLimit]]></code>
-      <code><![CDATA[groupJsonColumnsForUpdate]]></code>
-    </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php">
     <FalsableReturnStatement>
@@ -9349,7 +9291,6 @@
       <code><![CDATA[cleanDirectory]]></code>
       <code><![CDATA[copy]]></code>
       <code><![CDATA[copyDirectory]]></code>
-      <code><![CDATA[delete]]></code>
       <code><![CDATA[deleteDirectories]]></code>
       <code><![CDATA[deleteDirectory]]></code>
       <code><![CDATA[directories]]></code>
@@ -9364,10 +9305,8 @@
       <code><![CDATA[guessExtension]]></code>
       <code><![CDATA[hash]]></code>
       <code><![CDATA[isDirectory]]></code>
-      <code><![CDATA[isFile]]></code>
       <code><![CDATA[isReadable]]></code>
       <code><![CDATA[isWritable]]></code>
-      <code><![CDATA[lastModified]]></code>
       <code><![CDATA[link]]></code>
       <code><![CDATA[makeDirectory]]></code>
       <code><![CDATA[mimeType]]></code>
@@ -9376,13 +9315,14 @@
       <code><![CDATA[moveDirectory]]></code>
       <code><![CDATA[name]]></code>
       <code><![CDATA[prepend]]></code>
-      <code><![CDATA[put]]></code>
       <code><![CDATA[replace]]></code>
       <code><![CDATA[requireOnce]]></code>
-      <code><![CDATA[sharedGet]]></code>
-      <code><![CDATA[size]]></code>
       <code><![CDATA[type]]></code>
     </PossiblyUnusedMethod>
+    <PossiblyUnusedReturnValue>
+      <code><![CDATA[bool]]></code>
+      <code><![CDATA[int|bool]]></code>
+    </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Illuminate/Filesystem/FilesystemAdapter.php">
     <FalsableReturnStatement>
@@ -12326,14 +12266,8 @@
   </file>
   <file src="src/Illuminate/Http/Testing/MimeType.php">
     <PossiblyUnusedMethod>
-      <code><![CDATA[from]]></code>
-      <code><![CDATA[get]]></code>
-      <code><![CDATA[getMimeTypes]]></code>
       <code><![CDATA[search]]></code>
     </PossiblyUnusedMethod>
-    <UnusedProperty>
-      <code><![CDATA[$mime]]></code>
-    </UnusedProperty>
   </file>
   <file src="src/Illuminate/Http/UploadedFile.php">
     <InvalidNullableReturnType>
@@ -12878,9 +12812,6 @@
       <code><![CDATA[start]]></code>
       <code><![CDATA[stop]]></code>
     </MissingPureAnnotation>
-    <UnusedClass>
-      <code><![CDATA[Transport]]></code>
-    </UnusedClass>
   </file>
   <file src="src/Illuminate/Notifications/Action.php">
     <MissingImmutableAnnotation>
@@ -13290,13 +13221,10 @@
       <code><![CDATA[addQuery]]></code>
       <code><![CDATA[appendArray]]></code>
       <code><![CDATA[appends]]></code>
-      <code><![CDATA[buildFragment]]></code>
-      <code><![CDATA[currentPage]]></code>
       <code><![CDATA[currentPageResolver]]></code>
       <code><![CDATA[currentPathResolver]]></code>
       <code><![CDATA[defaultSimpleView]]></code>
       <code><![CDATA[defaultView]]></code>
-      <code><![CDATA[firstItem]]></code>
       <code><![CDATA[fragment]]></code>
       <code><![CDATA[getOptions]]></code>
       <code><![CDATA[getPageName]]></code>
@@ -13306,21 +13234,15 @@
       <code><![CDATA[isNotEmpty]]></code>
       <code><![CDATA[isValidPageNumber]]></code>
       <code><![CDATA[items]]></code>
-      <code><![CDATA[lastItem]]></code>
       <code><![CDATA[loadMorph]]></code>
       <code><![CDATA[loadMorphCount]]></code>
       <code><![CDATA[onEachSide]]></code>
       <code><![CDATA[onFirstPage]]></code>
-      <code><![CDATA[path]]></code>
-      <code><![CDATA[perPage]]></code>
-      <code><![CDATA[previousPageUrl]]></code>
       <code><![CDATA[queryStringResolver]]></code>
-      <code><![CDATA[resolveCurrentPage]]></code>
       <code><![CDATA[resolveCurrentPath]]></code>
       <code><![CDATA[setCollection]]></code>
       <code><![CDATA[setPageName]]></code>
       <code><![CDATA[setPath]]></code>
-      <code><![CDATA[url]]></code>
       <code><![CDATA[useBootstrapThree]]></code>
       <code><![CDATA[useTailwind]]></code>
       <code><![CDATA[viewFactory]]></code>
@@ -13329,18 +13251,11 @@
       <code><![CDATA[withQueryString]]></code>
     </PossiblyUnusedMethod>
     <PossiblyUnusedProperty>
-      <code><![CDATA[$currentPage]]></code>
-      <code><![CDATA[$currentPageResolver]]></code>
       <code><![CDATA[$currentPathResolver]]></code>
       <code><![CDATA[$defaultSimpleView]]></code>
       <code><![CDATA[$defaultView]]></code>
-      <code><![CDATA[$fragment]]></code>
       <code><![CDATA[$onEachSide]]></code>
       <code><![CDATA[$options]]></code>
-      <code><![CDATA[$pageName]]></code>
-      <code><![CDATA[$path]]></code>
-      <code><![CDATA[$perPage]]></code>
-      <code><![CDATA[$query]]></code>
       <code><![CDATA[$queryStringResolver]]></code>
       <code><![CDATA[$viewFactoryResolver]]></code>
     </PossiblyUnusedProperty>
@@ -16471,9 +16386,9 @@
     <MissingInterfaceImmutableAnnotation>
       <code><![CDATA[ExistenceAwareInterface]]></code>
     </MissingInterfaceImmutableAnnotation>
-    <UnusedClass>
-      <code><![CDATA[ExistenceAwareInterface]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[setExists]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/Illuminate/Session/FileSessionHandler.php">
     <InvalidReturnType>
@@ -16768,7 +16683,6 @@
       <code><![CDATA[isAssoc]]></code>
       <code><![CDATA[last]]></code>
       <code><![CDATA[prepend]]></code>
-      <code><![CDATA[query]]></code>
       <code><![CDATA[sort]]></code>
       <code><![CDATA[sortRecursive]]></code>
     </PossiblyUnusedMethod>
@@ -17149,19 +17063,16 @@
       <code><![CDATA[groupBy]]></code>
       <code><![CDATA[intersect]]></code>
       <code><![CDATA[intersectByKeys]]></code>
-      <code><![CDATA[isNotEmpty]]></code>
       <code><![CDATA[join]]></code>
       <code><![CDATA[keyBy]]></code>
       <code><![CDATA[keys]]></code>
       <code><![CDATA[last]]></code>
-      <code><![CDATA[make]]></code>
       <code><![CDATA[mapInto]]></code>
       <code><![CDATA[mapSpread]]></code>
       <code><![CDATA[mapToDictionary]]></code>
       <code><![CDATA[mapToGroups]]></code>
       <code><![CDATA[max]]></code>
       <code><![CDATA[median]]></code>
-      <code><![CDATA[merge]]></code>
       <code><![CDATA[mergeRecursive]]></code>
       <code><![CDATA[min]]></code>
       <code><![CDATA[mode]]></code>
@@ -18009,7 +17920,6 @@
       <code><![CDATA[$format]]></code>
     </PossiblyNullArgument>
     <PossiblyUnusedMethod>
-      <code><![CDATA[__construct]]></code>
       <code><![CDATA[addIf]]></code>
       <code><![CDATA[any]]></code>
       <code><![CDATA[checkFormat]]></code>
@@ -18218,7 +18128,6 @@
       <code><![CDATA[preg_replace('/(.)(?=[A-Z])/u', '$1'.$delimiter, $value)]]></code>
     </PossiblyNullArgument>
     <PossiblyUnusedMethod>
-      <code><![CDATA[after]]></code>
       <code><![CDATA[afterLast]]></code>
       <code><![CDATA[ascii]]></code>
       <code><![CDATA[before]]></code>
@@ -18572,7 +18481,9 @@
       <code><![CDATA[equality]]></code>
       <code><![CDATA[function ($value) {]]></code>
       <code><![CDATA[function ($value) {]]></code>
+      <code><![CDATA[isNotEmpty]]></code>
       <code><![CDATA[proxy]]></code>
+      <code><![CDATA[unwrap]]></code>
       <code><![CDATA[useAsCallable]]></code>
     </MissingPureAnnotation>
     <PossiblyInvalidArgument>
@@ -18812,6 +18723,9 @@
       <code><![CDATA[public static function assertFileDoesNotExist(string $filename, string $message = ''): void]]></code>
       <code><![CDATA[public static function assertMatchesRegularExpression(string $pattern, string $string, string $message = ''): void]]></code>
     </MissingOverrideAttribute>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[assertArraySubset]]></code>
+    </PossiblyUnusedMethod>
     <PossiblyUnusedParam>
       <code><![CDATA[$array]]></code>
       <code><![CDATA[$checkForIdentity]]></code>
@@ -18820,9 +18734,6 @@
     <UndefinedClass>
       <code><![CDATA[InvalidArgumentHelper]]></code>
     </UndefinedClass>
-    <UnusedClass>
-      <code><![CDATA[Assert]]></code>
-    </UnusedClass>
   </file>
   <file src="src/Illuminate/Testing/Constraints/ArraySubset.php">
     <DuplicateClass>
